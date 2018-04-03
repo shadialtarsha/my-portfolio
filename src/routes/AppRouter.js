@@ -1,12 +1,20 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from '../components/Header';
+import AboutPage from '../components/AboutPage';
+import SkillsPage from '../components/SkillsPage';
+import PortfolioPage from '../components/PortfolioPage';
+import ContactPage from '../components/ContactPage';
+import NotFoundPage from '../components/NotFoundPage';
 
 const AppRouter = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/" component={Header} />
-      <Route path="/about" component={Header} />
+      <Route path="/" component={AboutPage} exact />
+      <Route path="/about" component={AboutPage} />
+      <Route path="/skills" component={SkillsPage} />
+      <Route path="/portfolio" component={PortfolioPage} />
+      <Route path="/contact" component={ContactPage} />
+      <Route component={NotFoundPage} />
     </Switch>
   </BrowserRouter>
 );

@@ -1,30 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
   state = { isNavOpen: false };
 
   onOpenNav = e => {
-    e.currentTarget.classList.remove('hover');
-    e.currentTarget.classList.remove('hover-active');
     e.currentTarget.classList.toggle('open');
     this.setState(prevState => ({ isNavOpen: !prevState.isNavOpen }));
-  };
-
-  onMouseOver = e => {
-    if (!this.state.isNavOpen) {
-      e.currentTarget.classList.add('hover');
-    } else {
-      e.currentTarget.classList.add('hover-active');
-    }
-  };
-
-  onMouseOut = e => {
-    if (!this.state.isNavOpen) {
-      e.currentTarget.classList.remove('hover');
-    } else {
-      e.currentTarget.classList.remove('hover-active');
-    }
   };
 
   render() {
@@ -36,27 +18,21 @@ class Header extends Component {
           }
         >
           <div className="header__nav__container">
-            <Link to="/" className="header__nav__link" exact="true">
+            <NavLink to="/" className="header__nav__link" activeStyle={{ color: 'white' }} exact>
               <span>about</span>
-            </Link>
-            <Link to="/skills" className="header__nav__link">
+            </NavLink>
+            <NavLink to="/skills" className="header__nav__link" activeStyle={{ color: 'white' }}>
               <span>skills</span>
-            </Link>
-            <Link to="/portfolio" className="header__nav__link">
+            </NavLink>
+            <NavLink to="/portfolio" className="header__nav__link" activeStyle={{ color: 'white' }}>
               <span>portfolio</span>
-            </Link>
-            <Link to="/contact" className="header__nav__link">
+            </NavLink>
+            <NavLink to="/contact" className="header__nav__link" activeStyle={{ color: 'white' }}>
               <span>contact</span>
-            </Link>
+            </NavLink>
           </div>
         </nav>
-        <div
-          className="header__burger"
-          role="button"
-          onMouseOver={this.onMouseOver}
-          onMouseOut={this.onMouseOut}
-          onClick={this.onOpenNav}
-        >
+        <div className="header__burger" role="button" onClick={this.onOpenNav}>
           <div className="header__burger__line" />
         </div>
       </header>

@@ -2,7 +2,7 @@
     background-color: transparent;
     cursor: pointer;
     position: fixed;
-    padding:5px 4px;
+    padding:5px 5px;
     right: $xxxl-size;
     @media (max-width: $desktop-breakpoint*2){
         right: $xl-size;
@@ -23,7 +23,7 @@
         height: 2px;
         left: $l-size;
         margin: 8px 0;
-        transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         width: 42px;
     }
 }
@@ -41,26 +41,6 @@
     transform: translateY(-12px) rotate(225deg);
 }
 
-.header__burger.hover:before{
-    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: translateY(-6px);
-}
-
-.header__burger.hover:after{
-    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: translateY(6px);
-}
-
-.header__burger.hover-active:before{
-    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform:translateY(8px) rotate(125deg)
-}
-
-.header__burger.hover-active:after{
-    transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transform: translateY(-12px) rotate(235deg);
-}
-
 .header__nav{
     transform: translate3d(0, -100%, 0);
     transition: transform .5s .2s cubic-bezier(0.86, 0, 0.07, 1);
@@ -73,7 +53,7 @@
 .header__nav__container{
     align-content: center;
     align-items: center;
-    box-shadow: 0px 6px 38px darken($dark-grey, 30%);
+    box-shadow: 0px 6px 38px darken($dark-grey, 1%);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -85,7 +65,7 @@
 
 .header__nav .header__nav__link{
     align-items: center;
-    background-color: darken($dark-grey, 5%);
+    background-color: darken($dark-grey, 3%);
     color: $light-grey;
     cursor: pointer;
     display: flex;
@@ -105,8 +85,4 @@
 
 .header__nav .header__nav__link:hover{
     background: darken($dark-grey, 12%);
-}
-
-.header__nav .header__nav__link:active{
-    color: white;
 }
