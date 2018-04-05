@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Roboto:400');
 @import './base/settings';
 @import './base/base';
+@import './components/page-content';
+@import './components/pages';
+@import './components/current';
+@import './components/centered';
+@import './components/wrapper';
 @import './components/content-container';
 @import './components/header';
 @import './components/home';
 @import './components/buttons';
+@import './components/error';

@@ -1,20 +1,24 @@
-*{
+*,:after,:before{
     box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body{
     background-color: $dark-blue;
-    font-family: 'Lato', sans-serif;
     font-size:$m-fontSize;
     font-weight: 400;
     height: 100%;
-    line-height: 1.75rem;
+    line-height: 1.75em;
     overflow-x: hidden;
     overflow-y: hidden;
-    position: relative;
+    position: absolute;
+    text-align: center;
     width: 100%;
 }

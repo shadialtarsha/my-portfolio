@@ -1,0 +1,33 @@
+#error{
+    align-items: center; 
+    background-color: $very-dark-red;
+    display: flex;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top:0;
+    transition: background .2s ease-out;
+    width:100%;
+}
+
+#error h1{
+    text-shadow: none;
+    font-size: 4.5em;
+}
+
+#error p{
+    color: $white;
+    font-family: 'lato',sans-serif;
+    margin-bottom: 4px;
+}
+
+#error a{
+    color:$white;
+    font-family: 'MontSerrat',sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration: underline;
+    display: block;
+    margin-top:12px;
+}
