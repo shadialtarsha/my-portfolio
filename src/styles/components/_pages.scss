@@ -1,16 +1,36 @@
 .pages header{
     position: relative;
-    margin: 0 20px;
+    margin: 0 $m-size;
     text-align: left;
 }
 
 .pages header h1{
-    font-family: 'Montserrat',sans-serif;
-    color:#cacaca;
-    line-height: 1.45em;
+    font-family: $Montserrat;
+    color:$titles-color;
+    line-height: $h1-line-height;
     font-weight: 700;
     letter-spacing: -2px;
     margin-bottom: .1em;
     text-transform: lowercase;
     width: 100%;
+    @media (max-width: $x-small-device) {
+        line-height: $h1-line-height-600px;
+    }
+}
+
+.pages header p{
+    @media (max-width: $x-small-device) {
+        font-size: $m-fontSize;
+        line-height: $p-line-height-600px;
+    } 
+}
+
+.pages button{
+    border:none;
+    color: $white;
+    font-family: $Montserrat;
+    font-size: $s-fontSize;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: $s-size $l-size;
 }

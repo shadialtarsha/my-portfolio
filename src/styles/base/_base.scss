@@ -11,11 +11,11 @@ html{
 }
 
 body{
-    background-color: $dark-blue;
+    background-color: $bg-color;
     font-size:$m-fontSize;
     font-weight: 400;
     height: 100%;
-    line-height: 1.75em;
+    line-height: $defult-line-height;
     overflow-x: hidden;
     overflow-y: hidden;
     position: absolute;

@@ -7,24 +7,23 @@
     position: absolute;
     text-align: center;
     top:0;
-    transition: background .2s ease-out;
     width:100%;
 }
 
 #error h1{
-    text-shadow: none;
-    font-size: 4.5em;
+    font-size: $xl-fontSize;
 }
 
 #error p{
     color: $white;
-    font-family: 'lato',sans-serif;
+    font-family: $lato;
     margin-bottom: 4px;
 }
 
 #error a{
     color:$white;
-    font-family: 'MontSerrat',sans-serif;
+    font-family: Montserrat;
+    font-size: $m-fontSize;
     font-weight: 700;
     font-size: 12px;
     text-decoration: underline;

@@ -1,32 +1,53 @@
 // Colors
+$bg-color:#282c34;
+$titles-color:#cacaca;
+$white: #fff;
+$very-dark-red:#912B2B;
+$shapes-color: #61afef;
+
+$light-orange:#E94C3D;
 $dark-grey:#2F2F2F;
 $light-grey:#8a8a8a;
-$light-orange:#E94C3D;
-$dark-blue:#282c34;
 $dark-red: #B20202;
-$very-dark-red:#912B2B;
 $const:#369cc2;
-$white: #fff;
 $light-white:#bbb6b6;
-$dark-white:#cacaca;
 $operator:#e06c75;
 $value:#a4834c;
-$object: #61afef;
 $function:#91b45c;
 $stringInterpolation: #8060dd;
-$editor:#282c34;
-// Fonts
+// Fonts-family
+$Montserrat: 'Montserrat',sans-serif;
+$lato: 'lato',sans-serif;
+$Roboto: 'Roboto', sans-serif;
+// Font Size
 $s-fontSize: 1.2rem;
 $m-fontSize: 1.6rem;
 $l-fontSize: 3.2rem;
+$xl-fontSize: 7.2rem;
+// Line height
+$defult-line-height: 1.75em;
+$h1-line-height: 1.45em;
+$h1-line-height-600px: 1em;
+$p-line-height-600px: 1.2em;
 // Spacing
-$xs-size: 0.8rem;
-$s-size: 1.2rem;
-$m-size: 1.6rem;
-$xm-size: 1.8rem;
+$s-size: 1.6rem;
+$m-size: 2.0rem;
 $l-size: 3.2rem;
-$xl-size: 4.8rem;
-$xxl-size: 6.4rem;
-$xxxl-size: 8.0rem;
-// Breakpoint
-$desktop-breakpoint: 45rem;
+$xl-size: 6.0rem;
+$xxl-size: 8.0rem;
+// max-width:
+$xxx-small-width: 50rem; // 500px
+$xx-small-width: 60rem; // 600px
+$x-small-width: 70rem; // 700px
+$small-width: 76rem; // 760px
+$medium-width: 80rem; // 800px
+$large-width: 88rem; // 880px
+$x-large-width: 101rem; // 1010px
+// Breakpoints
+$x-small-device: 37.5em; // 600px
+$small-device: 50em; // 800px
+$medium-device: 56.25em; // 900px
+$large-device: 68.75em; // 1100px
+$x-large-device: 81.25em; // 1300px
+$xx-large-device: 90em; // 1400px
+$xxx-large-device: 100em; // 1600px

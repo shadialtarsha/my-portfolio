@@ -15,7 +15,7 @@ const AppRouter = () => (
       <Route path="/skills" component={SkillsPage} />
       <Route path="/portfolio" component={PortfolioPage} />
       <Route path="/contact" component={ContactPage} />
-      <Route component={NotFoundPage} />
+      <Route component={NotFoundPage} error="error-page" />
     </Switch>
   </BrowserRouter>
 );
