@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Roboto:400');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700');
+
 @import './base/settings';
 @import './base/base';
-@import './components/page-content';
-@import './components/pages';
+
 @import './components/centered';
 @import './components/wrapper';
 
-@import './components/home';
-@import './components/header';
+// @import './components/header';
+// @import './components/about';
+// @import './components/social-media';
 @import './components/error';

@@ -1,22 +1,17 @@
-.wrapper{
-    margin: 0 auto;
-    max-width: $x-large-width;
-    @media (max-width: $xxx-large-device){
-        max-width: $large-width;
+.wrapper{    
+    padding: 15px 15px;
+
+    @media (min-width: 575px){
+        max-width: 545px;
     }
-    @media (max-width: $xx-large-device){
-        max-width: $medium-width;
+    @media (min-width: 768px){
+        margin: 0 auto;
+        max-width: 738px;
     }
-    @media (max-width: $x-large-device){
-        max-width: $small-width;
+    @media (min-width: 992px){
+        max-width: 962px;
     }
-    @media (max-width: $large-device){
-        max-width: $x-small-width;
-    }
-    @media (max-width: $medium-device){
-        max-width: $xx-small-width;
-    }
-    @media (max-width: $small-device){
-        max-width: $xxx-small-width;
+    @media (min-width: 1200px){
+        max-width: 1170px;
     }
 }

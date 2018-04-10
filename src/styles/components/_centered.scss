@@ -1,10 +1,5 @@
 .centered{
     display: block;
-    padding:$xxl-size 0 $xl-size 0;
     text-align: center;
     width: 100%;
-
-    @media (max-width: $small-device){
-        padding: $xxl-size/2 0;
-    }
 }

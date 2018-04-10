@@ -1,17 +1,28 @@
 import React from 'react';
 
 const SocialMedia = () => (
-  <div className="social-media">
-    <a href="https://www.facebook.com/shadi.altarsha" target="_blank" rel="noopener noreferrer">
-      <i className="social-media__icon fb fab fa-facebook-square" />
-    </a>
-    <a href="https://github.com/shadialtarsha" target="_blank" rel="noopener noreferrer">
-      <i className="social-media__icon github fab fa-github-square" />
-    </a>
-    <a href="https://twitter.com/shadi_altarsha" target="_blank" rel="noopener noreferrer">
-      <i className="social-media__icon twitter fab fa-twitter-square" />
-    </a>
-  </div>
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/shadi.altarsha" target="_blank" rel="noopener noreferrer">
+        Follow me on Facebook
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/shadialtarsha" target="_blank" rel="noopener noreferrer">
+        Follow me on GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://twitter.com/shadi_altarsha" target="_blank" rel="noopener noreferrer">
+        Follow me on Twitter
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/shadi_altarsha" target="_blank" rel="noopener noreferrer">
+        Follow me on Instagram
+      </a>
+    </li>
+  </ul>
 );
 
 export default SocialMedia;
