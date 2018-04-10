@@ -1,4 +1,4 @@
 node_modules
-public/dist
+public/dist/
 config.development.env
 config.test.env
