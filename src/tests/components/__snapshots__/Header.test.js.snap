@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header>
+  <nav>
+    <NavLink
+      activeClassName="active"
+      activeStyle={
+        Object {
+          "color": "white",
+        }
+      }
+      ariaCurrent="true"
+      exact={true}
+      to="/about"
+    >
+      <span>
+        about
+      </span>
+    </NavLink>
+    <NavLink
+      activeClassName="active"
+      activeStyle={
+        Object {
+          "color": "white",
+        }
+      }
+      ariaCurrent="true"
+      to="/skills"
+    >
+      <span>
+        skills
+      </span>
+    </NavLink>
+    <NavLink
+      activeClassName="active"
+      activeStyle={
+        Object {
+          "color": "white",
+        }
+      }
+      ariaCurrent="true"
+      to="/portfolio"
+    >
+      <span>
+        portfolio
+      </span>
+    </NavLink>
+    <NavLink
+      activeClassName="active"
+      activeStyle={
+        Object {
+          "color": "white",
+        }
+      }
+      ariaCurrent="true"
+      to="/contact"
+    >
+      <span>
+        contact
+      </span>
+    </NavLink>
+  </nav>
+</header>
+`;

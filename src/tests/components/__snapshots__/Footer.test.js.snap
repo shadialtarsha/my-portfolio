@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Footer correctly 1`] = `
+<footer>
+  <h1>
+    Let's talk
+  </h1>
+  <p>
+    Wanna get in touch or talk about a project?
+  </p>
+  <p>
+    Feel free to contact me via email at work@shadialtarsha.com
+  </p>
+  <p>
+    or drop a line in the form at the 
+    <NavLink
+      activeClassName="active"
+      ariaCurrent="true"
+      to="/contact"
+    >
+      contact page
+    </NavLink>
+  </p>
+</footer>
+`;

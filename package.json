@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "start:dev": "npm run build:prod && npm start",
+    "start:dev": "npm run build:prod && nodemon server/server.js",
     "lint": "eslint *",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
@@ -39,6 +39,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^22.4.3",
     "node-sass": "^4.8.3",
+    "nodemon": "^1.17.3",
     "prettier": "^1.11.1",
     "react-test-renderer": "^16.3.0",
     "redux-mock-store": "^1.5.1",

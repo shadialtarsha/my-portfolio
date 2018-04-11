@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render skillsPage correctly 1`] = `
+<div>
+  <Header />
+  <div>
+    <header>
+      <h1>
+        My Skills
+      </h1>
+      <p>
+        These are my major skills as a Software engineer
+      </p>
+      <SkillItem
+        key="html1"
+        skill={
+          Object {
+            "_id": "html1",
+            "name": "HTML",
+            "percentage": "75%",
+          }
+        }
+      />
+      <SkillItem
+        key="css2"
+        skill={
+          Object {
+            "_id": "css2",
+            "name": "CSS",
+            "percentage": "75%",
+          }
+        }
+      />
+      <SkillItem
+        key="javascript3"
+        skill={
+          Object {
+            "_id": "javascript3",
+            "name": "JavaScript",
+            "percentage": "80%",
+          }
+        }
+      />
+      <SkillItem
+        key="react4"
+        skill={
+          Object {
+            "_id": "react4",
+            "name": "React",
+            "percentage": "70%",
+          }
+        }
+      />
+      <SkillItem
+        key="redux5"
+        skill={
+          Object {
+            "_id": "redux5",
+            "name": "Redux",
+            "percentage": "70%",
+          }
+        }
+      />
+      <SkillItem
+        key="unittest6"
+        skill={
+          Object {
+            "_id": "unittest6",
+            "name": "Unit Test",
+            "percentage": "75%",
+          }
+        }
+      />
+      <SkillItem
+        key="nodejs7"
+        skill={
+          Object {
+            "_id": "nodejs7",
+            "name": "NodeJS",
+            "percentage": "75%",
+          }
+        }
+      />
+      <SkillItem
+        key="express8"
+        skill={
+          Object {
+            "_id": "express8",
+            "name": "ExpressJS",
+            "percentage": "70%",
+          }
+        }
+      />
+      <SkillItem
+        key="mongodb9"
+        skill={
+          Object {
+            "_id": "mongodb9",
+            "name": "MongoDB",
+            "percentage": "65%",
+          }
+        }
+      />
+      <SkillItem
+        key="java10"
+        skill={
+          Object {
+            "_id": "java10",
+            "name": "JAVA",
+            "percentage": "75%",
+          }
+        }
+      />
+      <SkillItem
+        key="android11"
+        skill={
+          Object {
+            "_id": "android11",
+            "name": "Android",
+            "percentage": "70%",
+          }
+        }
+      />
+      <SkillItem
+        key="firebase12"
+        skill={
+          Object {
+            "_id": "firebase12",
+            "name": "Firebase",
+            "percentage": "75%",
+          }
+        }
+      />
+      <SkillItem
+        key="sql13"
+        skill={
+          Object {
+            "_id": "sql13",
+            "name": "SQL",
+            "percentage": "65%",
+          }
+        }
+      />
+      <SkillItem
+        key="restfulapi14"
+        skill={
+          Object {
+            "_id": "restfulapi14",
+            "name": "RESTFUL API",
+            "percentage": "75%",
+          }
+        }
+      />
+    </header>
+  </div>
+  <Footer />
+</div>
+`;

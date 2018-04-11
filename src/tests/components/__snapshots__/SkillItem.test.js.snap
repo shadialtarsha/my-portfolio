@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render skillItem correctly 1`] = `
+<div>
+  HTML
+   - 
+  75%
+</div>
+`;
