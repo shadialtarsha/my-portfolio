@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import Header from './Header';
 import SkillItem from './SkillItem';
 import Footer from './Footer';
@@ -14,6 +15,8 @@ export const SkillsPage = ({ skills }) => (
         {skills.map(skill => <SkillItem key={skill._id} skill={skill} />)}
       </header>
     </div>
+    <NavLink to="/about">about</NavLink>
+    <NavLink to="/portfolio">portfolio</NavLink>
     <Footer />
   </div>
 );

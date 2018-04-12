@@ -18,6 +18,10 @@ app.get('/portfolio/api/projects', (req, res) => {
   res.json(projects);
 });
 
+app.get('/portfolio/resume', (req, res) => {
+  res.download('./server/data/cv.txt', 'resume.txt');
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(publicPath, 'index.html'));
 });
