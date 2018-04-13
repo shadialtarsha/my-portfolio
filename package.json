@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
+    "start:dev": "nodemon server/server.js & npm run dev-server",
     "lint": "eslint *",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
@@ -50,6 +51,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "file-loader": "^1.1.11",
     "image-webpack-loader": "^4.2.0",

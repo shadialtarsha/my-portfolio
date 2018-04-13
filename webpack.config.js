@@ -61,13 +61,27 @@ module.exports = env => {
         },
       ],
     },
-    plugins: [CSSExtract, new webpack.DefinePlugin({})],
+    plugins: [
+      CSSExtract,
+      new webpack.DefinePlugin({}),
+      new webpack.HotModuleReplacementPlugin({
+        multiStep: true,
+      }),
+    ],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
       contentBase: path.join(__dirname, 'public'),
       port: 9000,
       publicPath: '/dist/',
       historyApiFallback: true,
+      hot: true,
+      inline: true,
+      proxy: {
+        '^/api/*': {
+          target: 'http://localhost:3333/api/',
+          secure: false,
+        },
+      },
     },
   };
 };
