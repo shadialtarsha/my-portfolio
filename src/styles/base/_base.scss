@@ -15,3 +15,23 @@ body{
     font-size: $base-fontSize;
 }
 
+.page{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.centered{
+    padding: 5% 0 5%;
+}
+
+.wrapper{
+    max-width: 33.5rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
