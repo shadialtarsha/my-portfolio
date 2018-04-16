@@ -1,37 +1,35 @@
 #error{
-    align-items: center; 
     background-color: $error-bg-color;
-    display: flex;
     height: 100%;
-    left: 0;
-    position: absolute;
-    text-align: center;
-    top:0;
     width:100%;
 }
 
-#error header{
+.error__container{
     text-align: left;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
-#error p{
+.error__container h1{
+    color: $off-white;
+    font-family: $montserrat;
+    width: 100%;
+}
+
+.error__container p{
     color: #fff;
-    margin-bottom: 4px;
-    @media (min-width: 575px){
-        font-size: 1.8rem;
-        margin-bottom: 8px;
-    }
-    @media (min-width: 1200px){
-        font-size: 2.4rem;
-    }
+    line-height: 1.45em;
 }
 
-#error a{
+.error__container a{
     color: #fff;
     font-family: $montserrat;
     font-size: 1.2rem;
     font-weight: 700;
     text-decoration: underline;
     display: block;
-    margin-top: 12px;
+    margin-top: 1.2rem;
 }

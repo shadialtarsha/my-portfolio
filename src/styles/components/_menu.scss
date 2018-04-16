@@ -45,6 +45,9 @@
 
 .burger-icon--white{
     @extend .burger-icon;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
     &:before,
     &:after,
     .burger-icon__line{
