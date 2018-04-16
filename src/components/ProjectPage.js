@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import Header from './Header';
+import Menu from './Menu';
 import Footer from './Footer';
 
 const findNextIndex = (projects, project) => {
@@ -25,7 +25,7 @@ export const ProjectPage = ({ projects, project }) => {
   const previousIndex = findPreviousIndex(projects, project);
   return (
     <div>
-      <Header />
+      <Menu />
       <NavLink to="/portfolio">Portfolio</NavLink>
       <div>
         {nextIndex !== -1 ? (

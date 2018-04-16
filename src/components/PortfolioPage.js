@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Header from './Header';
+import Menu from './Menu';
 import Footer from './Footer';
 import PortfolioItem from './PortfolioItme';
 
 export const PortfolioPage = ({ projects }) => (
   <div>
-    <Header />
+    <Menu />
     {projects.map(project => <PortfolioItem key={project._id} project={project} />)}
     <Footer />
   </div>

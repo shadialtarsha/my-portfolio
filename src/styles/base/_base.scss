@@ -1,4 +1,4 @@
-*,:after,:before{
+*, :after, :before{
     box-sizing: border-box;
     padding:0;
     margin:0;
@@ -9,38 +9,9 @@ html{
 }
 
 body{
-    background-color: $bg-color;
-    font-size: $base-fontSize;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    position: absolute;
-    width: 100%;
-}
-
-.page-content{
-    background-color: $bg-color;
-    display: block;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-h1 {
-    color: $off-white;
-    font-family: $montserrat;
-    font-size: $header-fontSize;
-    letter-spacing: -2px;
-    line-height: 1.45em;
-    margin-bottom: .1rem;
-    text-transform: lowercase;
-}
-
-p {
+    background: $bg-color;
     color: $grey;
     font-family: $lato;
-    line-height: 1.45em;
+    font-size: $base-fontSize;
 }
+

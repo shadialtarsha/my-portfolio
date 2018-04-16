@@ -1,0 +1,58 @@
+.social-media{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: .1rem;
+    top:auto;
+    bottom: 2.5rem;
+}
+
+.social-media > span{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.social-media ul{
+    list-style: none;
+    display: flex;
+    margin-top: .7rem;
+    margin-left: .1rem;
+    width: 100%;
+}
+
+.social-media ul li{
+    margin-left: .1rem;
+}
+
+.social-media ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-media ul li a .stack-style{
+    font-size: 2.3rem;
+}
+
+.social-media ul li a span .square{
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.social-media ul li a #facebook-square{
+    background: #4868AD;
+}
+.social-media ul li a #github-square{
+    background: #4E545A;
+}
+.social-media ul li a #twitter-square{
+    background: #3299FF;
+}
+.social-media ul li a #instagram-square{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-media ul li a .icon{
+    font-size: 3rem;
+}

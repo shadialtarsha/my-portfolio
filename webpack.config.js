@@ -61,13 +61,7 @@ module.exports = env => {
         },
       ],
     },
-    plugins: [
-      CSSExtract,
-      new webpack.DefinePlugin({}),
-      new webpack.HotModuleReplacementPlugin({
-        multiStep: true,
-      }),
-    ],
+    plugins: [CSSExtract, new webpack.DefinePlugin({}), new webpack.HotModuleReplacementPlugin()],
     devtool: isProduction ? 'source-map' : 'inline-source-map',
     devServer: {
       contentBase: path.join(__dirname, 'public'),

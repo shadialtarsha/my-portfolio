@@ -7,6 +7,7 @@ import AppRouter from './routes/AppRouter';
 import configureStore from './store/configureStore';
 import { startSetSkills } from './actions/skills';
 import { startSetProjects } from './actions/projects';
+import './styles/styles.scss';
 
 const store = configureStore();
 let hasRender = false;

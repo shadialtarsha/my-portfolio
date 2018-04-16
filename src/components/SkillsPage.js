@@ -1,13 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import Header from './Header';
+import Menu from './Menu';
 import SkillItem from './SkillItem';
 import Footer from './Footer';
 
 export const SkillsPage = ({ skills }) => (
   <div>
-    <Header />
+    <Menu />
     <div>
       <header>
         <h1>My Skills</h1>

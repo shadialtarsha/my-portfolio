@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Header from './Header';
+import Menu from './Menu';
 import ContactForm from './ContactForm';
 import SocialMedia from './SocialMedia';
 
 const ContactPage = () => (
   <div>
-    <Header />
+    <Menu />
     <ContactForm />
     <SocialMedia />
     <NavLink to="/portfolio">portfolio</NavLink>

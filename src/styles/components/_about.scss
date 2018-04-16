@@ -1,55 +1,55 @@
-#about{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height:100%;
-    padding:10% 10%;
-}
+// #about{
+//     align-items: center;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     height:100%;
+//     padding:10% 10%;
+// }
 
-.about__avatar{
-    border: 2px solid $shapes-color;
-    box-shadow: 0px 0px 20px $shapes-color;
-    border-radius: 50%;
-    width:200px;
-    height:200px;
-    padding:4px;
-    animation: about__avatar-scale .5s ease-out 0.2s forwards;
-}
+// .about__avatar{
+//     border: 2px solid $shapes-color;
+//     box-shadow: 0px 0px 20px $shapes-color;
+//     border-radius: 50%;
+//     width:200px;
+//     height:200px;
+//     padding:4px;
+//     animation: about__avatar-scale .5s ease-out 0.2s forwards;
+// }
 
-@keyframes about__avatar-scale{
-    0%{
-        transform: scale(0);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
+// @keyframes about__avatar-scale{
+//     0%{
+//         transform: scale(0);
+//     }
+//     100%{
+//         transform: scale(1);
+//     }
+// }
 
-.about__avatar img{
-    border-radius: 50%;
-    width:100%;
-    height:100%;
-}
+// .about__avatar img{
+//     border-radius: 50%;
+//     width:100%;
+//     height:100%;
+// }
 
-.about__bio{
-    margin-top: 60px;
-    @media (max-width: $x-small-device){
-        margin-top:20px;
-    }
-    letter-spacing: .05rem;
-}
+// .about__bio{
+//     margin-top: 60px;
+//     @media (max-width: $x-small-device){
+//         margin-top:20px;
+//     }
+//     letter-spacing: .05rem;
+// }
 
-.about__bio h3{
-    color: $titles-color;
-    font-family: $Montserrat;
-    font-size:24px;
-    text-shadow: 0px 0px 1px $titles-color; 
-    margin-bottom: 20px;
-}
+// .about__bio h3{
+//     color: $titles-color;
+//     font-family: $Montserrat;
+//     font-size:24px;
+//     text-shadow: 0px 0px 1px $titles-color; 
+//     margin-bottom: 20px;
+// }
 
-.about__bio p{
-    color:$light-white;
-    font-family: $lato;
-    font-size: 18px;
-}
+// .about__bio p{
+//     color:$light-white;
+//     font-family: $lato;
+//     font-size: 18px;
+// }

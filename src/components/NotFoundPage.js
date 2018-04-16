@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Header from './Header';
+import Menu from './Menu';
 
 export const NotFoundPage = () => (
   <div>
-    <Header />
+    <Menu />
     <div>
       <header>
         <h1>404 error</h1>
