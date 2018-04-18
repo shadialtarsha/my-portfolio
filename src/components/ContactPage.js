@@ -9,14 +9,7 @@ const ContactPage = () => (
     <Menu />
     <ContactForm />
     <SocialMedia />
-    <NavLink to="/portfolio">portfolio</NavLink>
-    <button
-      onClick={() => {
-        window.open('http://localhost:3333/portfolio/resume', '_blank');
-      }}
-    >
-      Download Resume
-    </button>
+    {/* <NavLink to="/portfolio">portfolio</NavLink> */}
   </div>
 );
 

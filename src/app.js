@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import 'normalize.css/normalize.css';
 
+import LoadingPage from './components/LoadingPage';
 import AppRouter from './routes/AppRouter';
 import configureStore from './store/configureStore';
 import { startSetSkills } from './actions/skills';
@@ -20,12 +21,14 @@ const jsx = (
 
 const renderApp = () => {
   if (!hasRender) {
-    ReactDOM.render(jsx, document.querySelector('#app'));
-    hasRender = true;
+    setTimeout(() => {
+      ReactDOM.render(jsx, document.querySelector('#app'));
+      hasRender = true;
+    }, 3000);
   }
 };
 
-ReactDOM.render(<p>Loading...</p>, document.querySelector('#app'));
+ReactDOM.render(<LoadingPage />, document.querySelector('#app'));
 
 store
   .dispatch(startSetSkills())

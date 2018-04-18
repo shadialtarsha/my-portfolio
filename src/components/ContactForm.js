@@ -54,6 +54,13 @@ export class ContactForm extends Component {
           required
         />
         <button type="submit">Submit</button>
+        <button
+          onClick={() => {
+            window.open('http://localhost:3333/portfolio/resume', '_blank');
+          }}
+        >
+          Download Resume
+        </button>
       </form>
     );
   }
