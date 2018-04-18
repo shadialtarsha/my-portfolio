@@ -8,16 +8,23 @@ import Footer from './Footer';
 export const SkillsPage = ({ skills }) => (
   <div>
     <Menu />
-    <div>
-      <header>
-        <h1>My Skills</h1>
-        <p>These are my major skills as a Software engineer</p>
-        {skills.map(skill => <SkillItem key={skill._id} skill={skill} />)}
-      </header>
+    <div className="page">
+      <main className="centered" id="skills">
+        <div className="wrapper">
+          <div className="skills_container">
+            <header>
+              <h3>My Skills</h3>
+              <p>These are my major skills as a Software engineer</p>
+            </header>
+            <div className="skills__circles">{skills.map(skill => <SkillItem key={skill._id} skill={skill} />)}</div>
+            <Footer />
+          </div>
+        </div>
+      </main>
     </div>
-    <NavLink to="/about">about</NavLink>
-    <NavLink to="/portfolio">portfolio</NavLink>
-    <Footer />
+    <div />
+    {/* <NavLink to="/about">about</NavLink>
+    <NavLink to="/portfolio">portfolio</NavLink> */}
   </div>
 );
 

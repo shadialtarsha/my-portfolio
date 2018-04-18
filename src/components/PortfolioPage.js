@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Menu from './Menu';
 import Footer from './Footer';
-import PortfolioItem from './PortfolioItme';
+import PortfolioItem from './PortfolioItem';
 
 export const PortfolioPage = ({ projects }) => (
   <div>

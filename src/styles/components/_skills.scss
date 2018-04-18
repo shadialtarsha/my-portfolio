@@ -1,0 +1,25 @@
+.skills_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_container header{
+    text-align: left;
+}
+
+.skills_container #page-footer{
+    width: 100%;
+    text-align: left;
+}
+
+.skills__circles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 1.2rem 0;
+}

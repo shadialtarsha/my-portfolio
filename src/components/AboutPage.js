@@ -16,8 +16,8 @@ const AboutPage = () => (
             <div>
               <h3>Hello, My name is Shadi Al-Tarsha.</h3>
               <p>
-                <span id="special-word">I am a Software developer</span>, ambitious, self-motivated, team worker, and a
-                big believer in the self-taught approach.
+                <span className="special-word">I am a Software developer</span>, ambitious, self-motivated, team worker,
+                and a big believer in the self-taught approach.
               </p>
               <p>
                 My favorite programming language is JavaScript, but Java was my best friend for the first 2 years of my
@@ -25,14 +25,14 @@ const AboutPage = () => (
               </p>
               <p>
                 Check out my projects in the{' '}
-                <NavLink id="special-link" to="/portfolio">
+                <NavLink className="special-link" to="/portfolio">
                   portfolio page
                 </NavLink>.
               </p>
               <p>
                 If you want to make something exsiting together, feel free to email me at{' '}
-                <span id="special-word">work@shadialtarsha.com</span> or fill a form in the{' '}
-                <NavLink id="special-link" to="/contact">
+                <span className="special-word">work@shadialtarsha.com</span> or fill a form in the{' '}
+                <NavLink className="special-link" to="/contact">
                   contact page
                 </NavLink>.
               </p>

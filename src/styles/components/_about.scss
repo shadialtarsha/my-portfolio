@@ -28,26 +28,5 @@
 }
 
 .about__container h3{
-    color: $off-white;
-    font-family: $montserrat;
     font-size: 1.8rem;
-    text-shadow: 0px 0px 1px $off-white; 
-    font-weight: 700;
-    line-height: 3.5rem;
-}
-
-.about__container p{
-    color:$grey;
-    line-height: 2.5rem;
-}
-
-.about__container p #special-word{
-    font-weight: bold;
-    color: $sky-color;
-}
-.about__container p #special-link{
-    font-weight: bold;
-    color: $sky-color;
-    cursor: pointer;
-    text-decoration: none;
 }
