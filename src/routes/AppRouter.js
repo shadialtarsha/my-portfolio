@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import AboutPage from '../components/AboutPage';
 import NotFoundPage from '../components/NotFoundPage';
@@ -14,7 +14,7 @@ const AppRouter = () => (
       render={({ location }) => (
         <TransitionGroup>
           <Switch>
-            <Route path="/" component={AboutPage} exact />
+            <Route path="/" render={() => <Redirect to="/about" />} exact />
             <Route path="/about" component={AboutPage} />
             <Route path="/skills" component={SkillsPage} />
             <Route path="/portfolio" component={PortfolioPage} exact />
