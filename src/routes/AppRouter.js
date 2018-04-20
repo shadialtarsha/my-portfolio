@@ -13,15 +13,17 @@ const AppRouter = () => (
     <Route
       render={({ location }) => (
         <TransitionGroup>
-          <Switch>
-            <Route path="/" render={() => <Redirect to="/about" />} exact />
-            <Route path="/about" component={AboutPage} />
-            <Route path="/skills" component={SkillsPage} />
-            <Route path="/portfolio" component={PortfolioPage} exact />
-            <Route path="/portfolio/:id" component={ProjectPage} />
-            <Route path="/contact" component={ContactPage} />
-            <Route component={NotFoundPage} error="error-page" />
-          </Switch>
+          <CSSTransition key={location.key} classNames="hide" timeout={300}>
+            <Switch>
+              <Route path="/" render={() => <Redirect to="/about" />} exact />
+              <Route path="/about" component={AboutPage} />
+              <Route path="/skills" component={SkillsPage} />
+              <Route path="/portfolio" component={PortfolioPage} exact />
+              <Route path="/portfolio/:id" component={ProjectPage} />
+              <Route path="/contact" component={ContactPage} />
+              <Route component={NotFoundPage} error="error-page" />
+            </Switch>
+          </CSSTransition>
         </TransitionGroup>
       )}
     />
