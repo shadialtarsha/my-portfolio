@@ -13,7 +13,7 @@ export const SkillsPage = ({ skills }) => (
         <div className="wrapper">
           <div className="skills_container">
             <header>
-              <h3>My Skills</h3>
+              <h1>my skills</h1>
               <p>These are my major skills as a Software engineer</p>
             </header>
             <div className="skills__circles">{skills.map(skill => <SkillItem key={skill._id} skill={skill} />)}</div>

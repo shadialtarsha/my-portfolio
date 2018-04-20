@@ -108,6 +108,9 @@
     text-decoration: none;
     transition: transform .55s cubic-bezier(0,.35,0,1), color .15s ease-out .1s;
     width: 100%;
+    @media (min-width: $large-device){
+        font-size: $large-paragraph-fontSize;
+    }
 }
 
 .menu__link:nth-child(1){

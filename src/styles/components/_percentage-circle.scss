@@ -71,12 +71,21 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    @media (min-width: $small-device){
+        width: 25%;
+    }
+    @media (min-width: $medium-device){
+        width: 20%;
+    }
+    @media (min-width: $large-device){
+        width: 15%;
+    }
 }
  
 .group {
     margin: 1rem;
     .circular-progress65 {
-        @include circular-progress(65, $sky-color);
+        @include circular-progress(65, $primary-color);
         animation: animated-circle65 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(65);
         &::before{
@@ -85,7 +94,7 @@
         }
     }
     .circular-progress70 {
-        @include circular-progress(70, $sky-color);
+        @include circular-progress(70, $primary-color);
         animation: animated-circle70 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(70);
         &::before{
@@ -94,7 +103,7 @@
         }
     }
     .circular-progress75 {
-        @include circular-progress(75, $sky-color);
+        @include circular-progress(75, $primary-color);
         animation: animated-circle75 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(75);
         &::before{
@@ -103,7 +112,7 @@
         }
     }
     .circular-progress80 {
-        @include circular-progress(80, $sky-color);
+        @include circular-progress(80, $primary-color);
         animation: animated-circle80 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(80);
         &::before{
@@ -112,7 +121,7 @@
         }
     }
     .circular-progress85 {
-        @include circular-progress(85, $sky-color);
+        @include circular-progress(85, $primary-color);
         animation: animated-circle85 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(85);
         &::before{
@@ -121,7 +130,7 @@
         }
     }
     .circular-progress90 {
-        @include circular-progress(90, $sky-color);
+        @include circular-progress(90, $primary-color);
         animation: animated-circle90 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(90);
         &::before{
@@ -130,7 +139,7 @@
         } 
     }
     .circular-progress95 {
-        @include circular-progress(95, $sky-color);
+        @include circular-progress(95, $primary-color);
         animation: animated-circle95 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(95);
         &::before{
@@ -139,7 +148,7 @@
         }
     }
     .circular-progress100 {
-        @include circular-progress(100, $sky-color);
+        @include circular-progress(100, $primary-color);
         animation: animated-circle100 1.0s ease-in-out .5s forwards;
         @include keyframesForCircle(100);
         &::before{
@@ -150,6 +159,6 @@
     .circular-text {
         font-family: $montserrat;
         text-align: center;
-        color: $off-white;
+        color: $title-color;
     }
 }
