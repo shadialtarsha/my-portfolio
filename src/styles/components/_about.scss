@@ -1,6 +1,9 @@
 #about{
     height:80%;
     width: 100%;
+    @media (min-width: $small-device){
+        height: 100%;
+    }
 }
 
 .about__container{

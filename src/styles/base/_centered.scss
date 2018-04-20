@@ -1,3 +1,6 @@
 .centered{
     padding: 5% 0 5%;
+    @media (min-width: $small-device){
+        padding: 7% 0 7%;
+    }
 }
