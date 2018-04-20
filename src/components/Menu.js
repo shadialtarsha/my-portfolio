@@ -2,12 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 class Menu extends React.Component {
-  state = { isNavOpen: false };
-
   onMenuIconOpen = e => {
     e.currentTarget.classList.toggle('open');
     document.querySelector('#page-header').classList.toggle('hidden');
-    this.setState(prevState => ({ isNavOpen: !prevState.isNavOpen }));
   };
 
   render() {
