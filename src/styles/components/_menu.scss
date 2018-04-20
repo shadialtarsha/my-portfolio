@@ -56,7 +56,7 @@
 .burger-icon--white{
     @extend .burger-icon;
     background: transparent;
-    border: .1rem solid white;
+    border: .1rem solid $white-color;
     border-radius: 50%;
     @media (min-width: $small-device){
         border:none;
@@ -100,7 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: $medium-fontSize;
+    font-size: $medium-paragraph-fontSize;
     font-family: $montserrat;
     font-weight: 700;
     height: calc(100% /4);
@@ -119,7 +119,7 @@
 }
 
 .menu .menu__link.active{
-    color: $sky-color;
+    color: $primary-color;
 }
 
 #page-header.hidden .menu{

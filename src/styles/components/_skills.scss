@@ -12,6 +12,13 @@
 .skills_container #page-footer{
     width: 100%;
     text-align: left;
+    
+}
+
+.skills_container #page-footer h3, .skills_container #page-footer p{
+    @media (min-width: $small-device){
+        text-align: center;
+    }    
 }
 
 .skills__circles{

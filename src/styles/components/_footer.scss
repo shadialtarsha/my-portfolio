@@ -3,16 +3,9 @@
     font-size: 1.4rem;
     margin-top: 4rem;
     width: 75%;
-}
-
-#page-footer h3{
-    color: $off-white;
-    font-family: $montserrat;
-    font-size: 1.8rem;
-    text-shadow: 0px 0px 1px $off-white; 
-    font-weight: 700;
-}
-
-#page-footer p{
-    color:$grey;
+    @media (min-width: $small-device) {
+        width: 100%;
+        margin-top: 6rem;
+        font-size: none;
+    }
 }
