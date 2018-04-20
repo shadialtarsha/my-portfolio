@@ -15,17 +15,20 @@
 
 .error__container h1{
     color: $off-white;
-    font-family: $montserrat;
+    width: 100%;
+}
+
+.error__container div{
     width: 100%;
 }
 
 .error__container p{
-    color: #fff;
+    color: $white-color;
     line-height: 1.45em;
 }
 
 .error__container a{
-    color: #fff;
+    color: $white-color;
     font-family: $montserrat;
     font-size: 1.2rem;
     font-weight: 700;
