@@ -1,6 +1,4 @@
 // Color
-$bg-color:#282c34;
-$error-bg-color:#912B2B;
 $white-color:#fff;
 $off-white:#cacaca;
 $sky-color:#61afef;
@@ -17,8 +15,43 @@ $function:#91b45c;
 $stringInterpolation: #8060dd;
 
 // Font size
-$base-fontSize: 1.6rem;
 $medium-fontSize: 2.0rem;
+
+
+/*******************************************/
+// colors
+$title-color: #cacaca;
+$paragraph-color: #8A8A8A;
+$bg-color: #282c34;
+$error-bg-color: #912B2B;
+$primary-color: #61afef;
+
 // Font family
 $montserrat: 'Montserrat',sans-serif;
 $lato: 'lato',sans-serif;
+
+
+// Titles font sizes
+$small-title-fontSize: 1.8rem;
+$medium-title-fontSize: 2.9rem;
+$large-title-fontSize: 4.2rem;
+
+// Titles line height
+$small-title-lineHeight: 3.5rem;
+$medium-title-lineHeight: 5.0rem;
+$large-title-lineHeight: 6.0rem;
+
+// paragraph font sizes
+$base-fontSize: 1.6rem;
+$medium-paragraph-fontSize: 1.8rem;
+$large-paragraph-fontSize: 2.0rem;
+
+// paragraph line height
+$small-paragraph-lineHeight: 2.5rem;
+$medium-paragraph-lineHeight: 3.2rem;
+
+// breakpoints
+$small-device: 36em;
+$medium-device: 48em;
+$large-device: 62em;
+$xlarge-device: 75em;

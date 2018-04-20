@@ -1,0 +1,51 @@
+h1, h2, h3, h4, h5, h6{
+    color: $title-color;
+    font-family: $montserrat;
+    font-weight: 700;
+    text-shadow: 0 0 .1rem $title-color;
+    text-align: left;
+}
+
+h1{
+    font-size: $small-title-fontSize;
+    line-height: $small-title-lineHeight;
+    @media (min-width: $small-device){
+        font-size: $medium-title-fontSize;
+        line-height: $medium-title-lineHeight;
+    }
+    @media (min-width: $large-device){
+        font-size: $large-title-fontSize;
+        line-height: $large-title-lineHeight;
+    }
+}
+
+h3{
+    font-size: $small-title-fontSize;
+    line-height: $small-title-lineHeight;
+    @media (min-width: $small-device){
+        font-size: $medium-title-fontSize;
+        line-height: $medium-title-lineHeight;
+    }
+}
+
+p{
+    color: $paragraph-color;
+    font-family: $lato;
+    text-align: left;
+    line-height: $small-paragraph-lineHeight;
+    @media (min-width: $small-device){
+        font-size: $medium-paragraph-fontSize;
+        line-height: $medium-paragraph-lineHeight;
+    }
+}
+
+.special-word{
+    color: $primary-color;
+    font-weight: 700;
+}
+.special-link{
+    color: $primary-color;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
