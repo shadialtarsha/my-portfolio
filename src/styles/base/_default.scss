@@ -1,3 +1,9 @@
+header{
+    flex-basis: 20%;
+    margin-bottom: 2rem;
+    padding:1rem;
+}
+
 h1, h2, h3, h4, h5, h6{
     color: $title-color;
     font-family: $montserrat;
@@ -7,24 +13,21 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: $small-title-fontSize;
-    line-height: $small-title-lineHeight;
-    @media (min-width: $small-device){
-        font-size: $medium-title-fontSize;
-        line-height: $medium-title-lineHeight;
-    }
+    margin: 1rem 0;
+    font-size: $large-title-fontSize;
+    line-height: $medium-title-lineHeight;
     @media (min-width: $large-device){
-        font-size: $large-title-fontSize;
+        font-size: $xlarge-title-fontSize;
         line-height: $large-title-lineHeight;
     }
 }
 
 h3{
     font-size: $small-title-fontSize;
-    line-height: $small-title-lineHeight;
+    line-height: $medium-title-lineHeight;
     @media (min-width: $medium-device){
         font-size: $medium-title-fontSize;
-        line-height: $medium-title-lineHeight;
+        line-height: $large-title-lineHeight;
     }
     @media (min-width: $large-device){
         font-size: $large-title-fontSize;

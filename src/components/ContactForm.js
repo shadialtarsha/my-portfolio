@@ -122,17 +122,19 @@ export class ContactForm extends Component {
             <i className="fas fa-envelope" />
           </label>
         </div>
-        <button id="submit" type="submit" disabled={!this.enableButton()}>
-          Send a message
-        </button>
-        <button
-          id="download"
-          onClick={() => {
-            window.open('http://localhost:3333/portfolio/resume', '_blank');
-          }}
-        >
-          My resume as pdf
-        </button>
+        <div className="buttons-container">
+          <button id="submit" type="submit" disabled={!this.enableButton()}>
+            Send a message
+          </button>
+          <button
+            id="download"
+            onClick={() => {
+              window.open('http://localhost:3333/portfolio/resume', '_blank');
+            }}
+          >
+            My resume as pdf
+          </button>
+        </div>
       </form>
     );
   }

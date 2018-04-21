@@ -1,6 +1,5 @@
 #contact{
     width: 100%;
-    // height: 100%;
 }
 
 .contact_container{
@@ -19,15 +18,13 @@
     width: 100%;
 }
 
-.contact_container header{
-    flex-basis: 20%;
-    margin-bottom: 2rem;
-    padding:1rem;
-}
 .contact_container .contact-form{
     flex-basis: 60%;
     margin-bottom: 2rem;
     padding:1rem;
+    @media (min-width: $large-device){
+        width: 75%;
+    }
 }
 .contact_container .social-media-container{
     padding:1rem;

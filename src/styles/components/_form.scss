@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.contact-form div {
+.contact-form div:not(:last-child) {
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
@@ -52,15 +52,19 @@
     vertical-align: top;
 }
 
-.contact-form button{
-    text-transform: uppercase;
-    color:#ebf1f8;
-    font-family: $montserrat;
-    border:none;
-    padding: 1rem;
-    transition: all .2s ease-in;
+.contact-form .buttons-container{
     width: 100%;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between
+}
+
+.contact-form button{
+    width:100%;
+    @media(min-width:$medium-device){
+        flex-basis: 45%;
+    }
 }
 
 .contact-form #submit{
@@ -68,10 +72,17 @@
     background:#009688;
     border-bottom: .4rem solid #00796b;
     box-shadow: 0 .3rem .3rem rgba(#000000,.7); 
+    margin-bottom: 2rem;
+    @media(min-width:$medium-device){
+        margin-bottom: 0;
+    }
     &:hover{
         background:#00796b;
         border-bottom: .2rem solid #00796b;
         margin-bottom: 2.2rem;
+        @media(min-width:$medium-device){
+            margin-bottom: .2rem;
+        }
     }
     &:disabled{
         color:$grey;

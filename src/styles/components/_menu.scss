@@ -2,10 +2,11 @@
     display: block;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
 }
 
 .burger-icon{
+    cursor: pointer;
     position: fixed;
     top: auto;
     right: 1.5rem;
@@ -19,7 +20,7 @@
     @media (min-width: $small-device){
         top: 3.2rem;
         background: none;
-        border-radius: none;
+        border-radius: 0%;
         border:none;
     }
     @media (min-width: $medium-device){
@@ -81,7 +82,6 @@
     position: fixed;
     top:0;
     left:0;
-    z-index:100;
     transition: transform .45s cubic-bezier(0.45, 0, 0, 1);
     width: 100%;
     @media (min-width: $small-device){

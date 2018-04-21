@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
 import ContactForm from './ContactForm';
-import SocialMedia from './SocialMedia';
 
 const ContactPage = () => (
   <div>
@@ -12,7 +11,7 @@ const ContactPage = () => (
         <div className="wrapper">
           <div className="contact_container">
             <header>
-              <h3>Contact me</h3>
+              <h1>Contact me</h1>
               <p>
                 If you wanna get in touch with me for talking about a project, or about a job vacancy, or even just to
                 say hi, full up the form below or send an email to{' '}
@@ -46,10 +45,13 @@ const ContactPage = () => (
         </div>
       </main>
     </div>
-    {/* <span id="hide-social">
-      <SocialMedia />
-    </span> */}
-    {/* <NavLink to="/portfolio">portfolio</NavLink> */}
+    <NavLink to="/portfolio" className="arrow" id="arrow-left">
+      <div className="lines">
+        <div id="left-upper" className="line" />
+        <div id="left-lower" className="line" />
+      </div>
+      <div id="left-arrow-link">portfolio</div>
+    </NavLink>
   </div>
 );
 

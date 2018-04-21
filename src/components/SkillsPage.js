@@ -22,7 +22,6 @@ export const SkillsPage = ({ skills }) => (
         </div>
       </main>
     </div>
-    <div />
     <NavLink to="/about" className="arrow" id="arrow-left">
       <div className="lines">
         <div id="left-upper" className="line" />
