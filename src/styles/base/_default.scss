@@ -22,9 +22,12 @@ h1{
 h3{
     font-size: $small-title-fontSize;
     line-height: $small-title-lineHeight;
-    @media (min-width: $small-device){
+    @media (min-width: $medium-device){
         font-size: $medium-title-fontSize;
         line-height: $medium-title-lineHeight;
+    }
+    @media (min-width: $large-device){
+        font-size: $large-title-fontSize;
     }
 }
 
@@ -33,7 +36,7 @@ p{
     font-family: $lato;
     text-align: left;
     line-height: $small-paragraph-lineHeight;
-    @media (min-width: $small-device){
+    @media (min-width: $medium-device){
         font-size: $medium-paragraph-fontSize;
         line-height: $medium-paragraph-lineHeight;
     }

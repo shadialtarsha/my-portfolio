@@ -1,36 +1,45 @@
-#about{
-    height:80%;
-    width: 100%;
-    @media (min-width: $small-device){
-        height: 100%;
-    }
-}
-
-.about__container{
+#about .about-container{
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    height: 100%;
 }
 
-.avatar{
+#about .about-container .avatar{
     border: .2rem solid $sky-color;
-    border-radius: 50%;
-    width: 15rem;
+    border-radius: 10%;
+    width: 14rem;
     height: 15rem;
-    padding: .4rem;
+    padding: .1rem;
     margin-bottom: 1.2rem;
 }
 
-.avatar img{
-    border-radius: 50%;
+#about .about-container .avatar .img{
+    background: url("/images/avatar.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10%;
     width:100%;
     height:100%;
 }
 
-.about__container h3, .about__container p{
+#about .about-container h3, #about .about-container p{
     text-align: center;
 }
 
+@media (min-width: $large-device), (max-height: $small-height-device){
+    #about .about-container{
+        flex-direction: row;
+    }
+
+    #about .about-container h3, #about .about-container p{
+        text-align: left;
+    }
+
+    #about .about-container .avatar{
+        width: 30rem;
+        height: 25rem;
+        margin-right: 3rem;
+        margin-bottom: 0;
+    }
+}

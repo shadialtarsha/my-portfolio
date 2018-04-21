@@ -9,9 +9,9 @@ const AboutPage = () => (
     <div className="page">
       <main className="centered" id="about">
         <div className="wrapper">
-          <div className="about__container">
+          <div className="about-container">
             <div className="avatar">
-              <img src="/images/avatar.jpg" alt="me" width="200" height="200" />
+              <div className="img" />
             </div>
             <div>
               <h3>Hello, My name is Shadi Al-Tarsha.</h3>
@@ -41,7 +41,13 @@ const AboutPage = () => (
         </div>
       </main>
     </div>
-    {/* <NavLink to="/skills">skills</NavLink> */}
+    <NavLink to="/skills" className="arrow" id="arrow-right">
+      <div id="right-arrow-link">skills</div>
+      <div className="lines">
+        <div id="right-upper" className="line" />
+        <div id="right-lower" className="line" />
+      </div>
+    </NavLink>
     <SocialMedia />
   </div>
 );

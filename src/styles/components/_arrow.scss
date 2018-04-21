@@ -1,0 +1,99 @@
+.arrow{
+    display: none;
+    z-index:400;
+    text-decoration: none;
+    &:active{
+        color: $title-color;
+    }
+    &:visited{
+        color: $title-color;
+    }
+}
+
+@media (min-width: $medium-device){
+   .arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5.4rem;
+    padding: 1rem;
+    position: absolute;
+    top:50%;
+    }
+
+    .arrow .line{
+        border-radius: .3rem;
+        width: 3.7rem;
+        height: .2rem;
+        background-color: $primary-color;
+        content: ' ';
+        transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #arrow-right{
+        right: 1.5rem;
+        @media (min-width: $medium-device){
+            right: 2rem;
+            &:hover{
+                #right-upper{
+                    transform: rotate(45deg) translateY(.1rem); 
+                }
+                #right-lower{
+                    transform: rotate(-45deg) translateY(-.1rem); 
+                }
+                #right-arrow-link{
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        }
+        #right-arrow-link{
+            color: $title-color;
+            font-weight: bold;
+            transform: translateX(3rem);
+            opacity: 0;
+            transition: all .3s linear;
+        }
+        #right-upper{
+            transform: rotate(30deg) translateY(.1rem);
+            transform-origin:  right;
+        }
+        #right-lower{
+            transform: rotate(-30deg) translateY(-.1rem);
+            transform-origin:  right;
+        }
+    }
+    #arrow-left{
+        left: 1.5rem;
+        @media (min-width: $medium-device){
+            left: 2rem;
+            &:hover{
+                #left-upper{
+                    transform: rotate(45deg) translateY(.1rem); 
+                }
+                #left-lower{
+                    transform: rotate(-45deg) translateY(-.1rem); 
+                }
+                #left-arrow-link{
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+        }
+        #left-arrow-link{
+            color: $title-color;
+            font-weight: bold;
+            transform: translateX(-3rem);
+            opacity: 0;
+            transition: all .3s linear;
+        }
+        #left-upper{
+            transform: rotate(30deg) translateY(.1rem);
+            transform-origin:  left;
+        }
+        #left-lower{
+            transform: rotate(-30deg) translateY(-.1rem);
+            transform-origin:  left;
+        }
+    }
+}

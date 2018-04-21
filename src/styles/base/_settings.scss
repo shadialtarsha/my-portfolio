@@ -24,6 +24,10 @@ $error-bg-color: #912B2B;
 $primary-color: #61afef;
 $white-color: #fff;
 
+$facebook-color: #4868AD;
+$github-color: #4E545A;
+$twitter-color: #3299FF;
+$instagram-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 // Font family
 $montserrat: 'Montserrat',sans-serif;
 $lato: 'lato',sans-serif;
@@ -31,8 +35,9 @@ $lato: 'lato',sans-serif;
 
 // Titles font sizes
 $small-title-fontSize: 1.8rem;
-$medium-title-fontSize: 2.9rem;
-$large-title-fontSize: 4.2rem;
+$medium-title-fontSize: 2.0rem;
+$large-title-fontSize: 2.8rem;
+$xlarge-title-fontSize: 4.2rem;
 
 // Titles line height
 $small-title-lineHeight: 3.5rem;
@@ -46,10 +51,11 @@ $large-paragraph-fontSize: 2.0rem;
 
 // paragraph line height
 $small-paragraph-lineHeight: 2.5rem;
-$medium-paragraph-lineHeight: 3.2rem;
+$medium-paragraph-lineHeight: 3.0rem;
 
 // breakpoints
 $small-device: 36em;
 $medium-device: 48em;
 $large-device: 62em;
 $xlarge-device: 75em;
+$small-height-device: 28em;

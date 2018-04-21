@@ -1,13 +1,18 @@
 .social-media{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     left: .1rem;
     top:auto;
     bottom: 2.5rem;
     z-index: 20;
     @media (min-width: $small-device){
-        top:40%;
+        top:38%;
+        left: 0;
+        bottom:0;
+    }
+    @media(max-height: $small-height-device){
+        top:25%;
         left: 0;
         bottom:0;
     }
@@ -66,16 +71,16 @@
 }
 
 .social-media ul li a #facebook-square{
-    background: #4868AD;
+    background: $facebook-color;
 }
 .social-media ul li a #github-square{
-    background: #4E545A;
+    background: $github-color;
 }
 .social-media ul li a #twitter-square{
-    background: #3299FF;
+    background: $twitter-color;
 }
 .social-media ul li a #instagram-square{
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: $instagram-color;
 }
 
 .social-media ul li a .icon{

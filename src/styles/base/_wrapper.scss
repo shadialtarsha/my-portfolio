@@ -3,10 +3,12 @@
     height: 100%;
     margin: 0 auto;
     @media (min-width: $small-device){
-        max-width: 53.4rem;
+        max-width: 57.6rem;
+        padding: 0 5%;
     }
     @media (min-width: $medium-device){
         max-width: 72.8rem;
+        padding: 0 8% 0 5%;
     }
     @media (min-width: $large-device){
         max-width: 95.2rem;

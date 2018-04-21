@@ -1,6 +1,6 @@
 #contact{
     width: 100%;
-    height: 100%;
+    // height: 100%;
 }
 
 .contact_container{
@@ -8,6 +8,109 @@
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    height: 80%;
+    min-height: 80%;
     width: 100%;
+}
+
+.contact_container .social-media-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.contact_container header{
+    flex-basis: 20%;
+    margin-bottom: 2rem;
+    padding:1rem;
+}
+.contact_container .contact-form{
+    flex-basis: 60%;
+    margin-bottom: 2rem;
+    padding:1rem;
+}
+.contact_container .social-media-container{
+    padding:1rem;
+    flex-basis: 20%;
+    margin-bottom: 2rem;
+}
+
+.contact_container button{
+    text-transform: uppercase;
+    color:#ebf1f8;
+    font-weight: 700;
+    font-family: $montserrat;
+    border:none;
+    padding: 0.8em 2rem;
+    transition: all .2s ease-in;
+    line-height: 1.75em;
+}
+
+
+.contact_container .social-media-container p{
+    margin-bottom: 2rem;
+}
+
+.contact_container .buttons-social-media{
+    color: $white-color;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 2rem;
+    & button{
+        cursor: pointer;
+        margin-right: 1rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2.0rem;
+        margin-right: 0.5rem;
+    }
+    #facebook-button{
+        background: $facebook-color;
+        color:#ebf1f8;
+        border-bottom: .4rem solid darken($facebook-color, 10%);
+        box-shadow: 0px .3rem .3rem rgba(#000000,.7); 
+        &:hover{
+            background:darken($facebook-color, 10%);
+            border-bottom-width: .2rem;
+            margin-bottom: .2rem;
+        }
+    }
+    #github-button{
+        background: $github-color;
+        border-bottom: .4rem solid darken($github-color, 10%);
+        box-shadow: 0px .3rem .3rem rgba(#000000,.7); 
+        &:hover{
+            background:darken($github-color, 10%);
+            border-bottom-width: .2rem;
+            margin-bottom: .2rem;
+        }
+    }
+    #twitter-button{
+        background: $twitter-color;
+        border-bottom: .4rem solid darken($twitter-color, 10%);
+        box-shadow: 0px .3rem .3rem rgba(#000000,.7); 
+        &:hover{
+            background:darken($twitter-color, 10%);
+            border-bottom-width: .2rem;
+            margin-bottom: .2rem;
+        }
+    }
+    #instagram-button{
+        color: #262626;
+        background: $white-color;
+        border-bottom: .4rem solid rgba(0,0,0,0.3);
+        box-shadow: 0px .3rem .3rem rgba(#000000,.7); 
+        &:hover{
+            background: darken(#8a8a8a, 10%);
+            border-bottom-width: .2rem;
+            margin-bottom: .2rem;
+        }
+    }
 }

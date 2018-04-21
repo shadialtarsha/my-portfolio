@@ -23,8 +23,20 @@ export const SkillsPage = ({ skills }) => (
       </main>
     </div>
     <div />
-    {/* <NavLink to="/about">about</NavLink>
-    <NavLink to="/portfolio">portfolio</NavLink> */}
+    <NavLink to="/about" className="arrow" id="arrow-left">
+      <div className="lines">
+        <div id="left-upper" className="line" />
+        <div id="left-lower" className="line" />
+      </div>
+      <div id="left-arrow-link">about</div>
+    </NavLink>
+    <NavLink to="/portfolio" className="arrow" id="arrow-right">
+      <div id="right-arrow-link">portfolio</div>
+      <div className="lines">
+        <div id="right-upper" className="line" />
+        <div id="right-lower" className="line" />
+      </div>
+    </NavLink>
   </div>
 );
 
