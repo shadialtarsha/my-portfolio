@@ -1,0 +1,27 @@
+#portfolio .portfolio-container footer h3, #portfolio .portfolio-container footer p{
+    text-align: center;
+}
+
+#portfolio .portfolio-container .filters-container span{
+    color:#000;
+    cursor: pointer;
+    font-family: $montserrat;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1em;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: inline-block;
+    padding: 8px 5px;
+    margin: 3px;
+    opacity: 1;
+    background: $primary-color;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 3px;
+    text-transform: uppercase;
+    overflow: hidden;
+    &:hover{
+        background: darken($primary-color, 10%);
+    }
+}
