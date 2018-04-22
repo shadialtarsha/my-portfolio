@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
 import Footer from './Footer';
 import PortfolioItem from './PortfolioItem';
+import Filter from './Filter';
 
 export const PortfolioPage = ({ projects }) => (
   <div>
@@ -17,23 +18,7 @@ export const PortfolioPage = ({ projects }) => (
               <p>These are my latest projects. You can use the filters below to filter the projects.</p>
             </header>
             <div className="filters-container">
-              <p>
-                <span>Show All</span>
-                <span>JavaScript</span>
-                <span>React</span>
-                <span>Redux</span>
-                <span>SASS</span>
-                <span>JAVA</span>
-                <span>Firebase</span>
-                <span>Android</span>
-                <span>Front-end</span>
-                <span>FullStack</span>
-                <span>NodeJs</span>
-                <span>ExpressJs</span>
-                <span>RESTFUL</span>
-                <span>Mongodb</span>
-                <span>JEST</span>
-              </p>
+              <Filter />
             </div>
             <div className="projects-container">
               {projects.map(project => <PortfolioItem key={project._id} project={project} />)}

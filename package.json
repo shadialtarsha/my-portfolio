@@ -12,9 +12,14 @@
     "dev-server": "webpack-dev-server",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json"
   },
+  "browserslist": [
+    "> 1%",
+    "ie > 9"
+  ],
   "author": "Shadi Al-Tarsha",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^8.3.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
@@ -40,6 +45,7 @@
     "jest": "^22.4.3",
     "node-sass": "^4.8.3",
     "nodemon": "^1.17.3",
+    "postcss-loader": "^2.1.4",
     "prettier": "^1.11.1",
     "react-test-renderer": "^16.3.0",
     "redux-mock-store": "^1.5.1",

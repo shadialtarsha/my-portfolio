@@ -1,0 +1,37 @@
+.filter-items{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.filter-items li{
+    color:#000;
+    cursor: pointer;
+    font-family: $montserrat;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1em;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: inline-block;
+    padding: 8px 5px;
+    margin: 3px;
+    opacity: 1;
+    background: $primary-color;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 3px;
+    text-transform: uppercase;
+    overflow: hidden;
+    outline: none;
+    &:hover{
+        background: darken($primary-color, 10%);
+    }
+}
+
+.filter-items li.active{
+    background: darken($primary-color, 10%);
+}
