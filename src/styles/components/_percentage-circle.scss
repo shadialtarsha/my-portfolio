@@ -15,8 +15,7 @@
     @return unquote($background-image);
 }
 
-@mixin circular-progress($percent-num, $color1:"#03A9F4") {
-    background: circular-progress(100, 0, $color1, #E0E0E0);
+.circle{
     border-radius: 50%;
     box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.16), 0 .2rem 1rem 0 rgba(0, 0, 0, 0.12);
     margin: 2em auto;
@@ -24,8 +23,6 @@
     width: 10rem;
     height: 10rem;
     margin: 1rem;
-    animation: animated-circle .7s ease-in-out .2s forwards;
-    @include keyframesForCircle($percent-num);
     &::before {
         background-color: #FAFAFA;
         border-radius: 50%;
@@ -44,13 +41,19 @@
         height: 100%;
         width: 100%;
     }
+}
+
+@mixin circular-progress($percent-num, $color1:"#03A9F4") {
+    background: circular-progress(100, 0, $color1, #E0E0E0);
+    animation: animated-circle .7s ease-in-out .2s forwards;
+    @include keyframesForCircle($percent-num);
 } 
 
 @mixin keyframesForCircle($percent){
     @keyframes animated-circle#{$percent} {
-        @for $i from 0 through 100{
-            #{$i *1%}{
-                background: circular-progress(100, ($percent/100)*$i, $sky-color, #E0E0E0);
+        @for $i from 0 through 10{
+            #{$i * 10%}{
+                background: circular-progress(100, ($percent/100)*($i*10), $sky-color, #E0E0E0);
             }
         }
     }
@@ -58,9 +61,9 @@
 
 @mixin keyframesForPercent($percent){
     @keyframes animated-percent#{$percent} {
-        @for $i from 0 through 100{
-            #{$i * 1%}{
-                content: '#{round(($percent/100) * $i)}%';
+        @for $i from 0 through 10{
+            #{$i * 10%}{
+                content: '#{round(($percent/100) * ($i*10))}%';
             }
         }
     }
@@ -86,10 +89,10 @@
     margin: 1rem;
     .circular-progress65 {
         @include circular-progress(65, $primary-color);
-        animation: animated-circle65 1.0s ease-in-out .5s forwards;
+        animation: animated-circle65 0.5s ease-in-out .5s forwards;
         @include keyframesForCircle(65);
         &::before{
-            animation: animated-percent65 1.0s ease-in-out .5s forwards;
+            animation: animated-percent65 0.5s ease-in-out .5s forwards;
             @include keyframesForPercent(65);
         }
         @supports (-ms-ime-align: auto) {
@@ -100,10 +103,10 @@
     }
     .circular-progress70 {
         @include circular-progress(70, $primary-color);
-        animation: animated-circle70 1.0s ease-in-out .5s forwards;
+        animation: animated-circle70 0.5s ease-in-out .5s forwards;
         @include keyframesForCircle(70);
         &::before{
-            animation: animated-percent70 1.0s ease-in-out .5s forwards;
+            animation: animated-percent70 0.5s ease-in-out .5s forwards;
             @include keyframesForPercent(70);
         }
         @supports (-ms-ime-align: auto) {
@@ -114,10 +117,10 @@
     }
     .circular-progress75 {
         @include circular-progress(75, $primary-color);
-        animation: animated-circle75 1.0s ease-in-out .5s forwards;
+        animation: animated-circle75 0.5s ease-in-out .5s forwards;
         @include keyframesForCircle(75);
         &::before{
-            animation: animated-percent75 1.0s ease-in-out .5s forwards;
+            animation: animated-percent75 0.5s ease-in-out .5s forwards;
             @include keyframesForPercent(75);
         }
         @supports (-ms-ime-align: auto) {
@@ -128,10 +131,10 @@
     }
     .circular-progress80 {
         @include circular-progress(80, $primary-color);
-        animation: animated-circle80 1.0s ease-in-out .5s forwards;
+        animation: animated-circle80 0.5s ease-in-out .5s forwards;
         @include keyframesForCircle(80);
         &::before{
-            animation: animated-percent80 1.0s ease-in-out .5s forwards;
+            animation: animated-percent80 0.5s ease-in-out .5s forwards;
             @include keyframesForPercent(80);
         }
         @supports (-ms-ime-align: auto) {
@@ -140,62 +143,62 @@
             }
         }
     }
-    .circular-progress85 {
-        @include circular-progress(85, $primary-color);
-        animation: animated-circle85 1.0s ease-in-out .5s forwards;
-        @include keyframesForCircle(85);
-        &::before{
-            animation: animated-percent85 1.0s ease-in-out .5s forwards;
-            @include keyframesForPercent(85);
-        }
-        @supports (-ms-ime-align: auto) {
-            &::before {
-                  content: '85%';
-            }
-        }
-    }
-    .circular-progress90 {
-        @include circular-progress(90, $primary-color);
-        animation: animated-circle90 1.0s ease-in-out .5s forwards;
-        @include keyframesForCircle(90);
-        &::before{
-            animation: animated-percent90 1.0s ease-in-out .5s forwards;
-            @include keyframesForPercent(90);
-        } 
-        @supports (-ms-ime-align: auto) {
-            &::before {
-                  content: '90%';
-            }
-        }
-    }
-    .circular-progress95 {
-        @include circular-progress(95, $primary-color);
-        animation: animated-circle95 1.0s ease-in-out .5s forwards;
-        @include keyframesForCircle(95);
-        &::before{
-            animation: animated-percent95 1.0s ease-in-out .5s forwards;
-            @include keyframesForPercent(95);
-        }
-        @supports (-ms-ime-align: auto) {
-            &::before {
-                  content: '95%';
-            }
-        }
-    }
-    .circular-progress100 {
-        @include circular-progress(100, $primary-color);
-        animation: animated-circle100 1.0s ease-in-out .5s forwards;
-        @include keyframesForCircle(100);
-        &::before{
-            animation: animated-percent100 1.0s ease-in-out .5s forwards;
-            @include keyframesForPercent(100);
-        }
-        @supports (-ms-ime-align: auto) {
-            &::before {
-                  content: '100%';
-            }
-        }
-    }
+    // .circular-progress85 {
+    //     @include circular-progress(85, $primary-color);
+    //     animation: animated-circle85 1.0s ease-in-out .5s forwards;
+    //     @include keyframesForCircle(85);
+    //     &::before{
+    //         animation: animated-percent85 1.0s ease-in-out .5s forwards;
+    //         @include keyframesForPercent(85);
+    //     }
+    //     @supports (-ms-ime-align: auto) {
+    //         &::before {
+    //               content: '85%';
+    //         }
+    //     }
+    // }
+    // .circular-progress90 {
+    //     @include circular-progress(90, $primary-color);
+    //     animation: animated-circle90 1.0s ease-in-out .5s forwards;
+    //     @include keyframesForCircle(90);
+    //     &::before{
+    //         animation: animated-percent90 1.0s ease-in-out .5s forwards;
+    //         @include keyframesForPercent(90);
+    //     } 
+    //     @supports (-ms-ime-align: auto) {
+    //         &::before {
+    //               content: '90%';
+    //         }
+    //     }
+    // }
+    // .circular-progress95 {
+    //     @include circular-progress(95, $primary-color);
+    //     animation: animated-circle95 1.0s ease-in-out .5s forwards;
+    //     @include keyframesForCircle(95);
+    //     &::before{
+    //         animation: animated-percent95 1.0s ease-in-out .5s forwards;
+    //         @include keyframesForPercent(95);
+    //     }
+    //     @supports (-ms-ime-align: auto) {
+    //         &::before {
+    //               content: '95%';
+    //         }
+    //     }
+    // }
+    // .circular-progress100 {
+    //     @include circular-progress(100, $primary-color);
+    //     animation: animated-circle100 1.0s ease-in-out .5s forwards;
+    //     @include keyframesForCircle(100);
+    //     &::before{
+    //         animation: animated-percent100 1.0s ease-in-out .5s forwards;
+    //         @include keyframesForPercent(100);
+    //     }
+    //     @supports (-ms-ime-align: auto) {
+    //         &::before {
+    //               content: '100%';
+    //         }
+    //     }
+    // }
     .circular-text {
         font-family: $montserrat;
         text-align: center;

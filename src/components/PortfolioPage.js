@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Footer from './Footer';
 import PortfolioItem from './PortfolioItem';
 import Filter from './Filter';
+import filterProjects from '../selectors/filterProjects';
 
 export const PortfolioPage = ({ projects }) => (
   <div>
@@ -46,7 +47,7 @@ export const PortfolioPage = ({ projects }) => (
 );
 
 const mapStateToProps = state => ({
-  projects: state.projects,
+  projects: filterProjects(state.projects, state.filter),
 });
 
 export default connect(mapStateToProps)(PortfolioPage);

@@ -1,5 +1,22 @@
+#portfolio .portfolio-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio .portfolio-container header{
+    margin-bottom: 2rem;
+}
+
+#portfolio .portfolio-container .filters-container{
+    margin-bottom: 1rem;
+}
+
 #portfolio .portfolio-container footer h3, #portfolio .portfolio-container footer p{
     text-align: center;
 }
 
-
+.projects-container .project-item{
+    width: 50%;
+    display: block;
+    text-decoration: none;
+}

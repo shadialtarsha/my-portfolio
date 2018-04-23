@@ -9,7 +9,8 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    border-bottom: 1px solid $sky-color;
+    // border: 1px solid $sky-color;
+    background: darken($bg-color, 5%);
     padding-bottom: .4rem;
     margin-bottom: 2rem;
 }
@@ -29,9 +30,9 @@
 .contact-form input, textarea{
     color: $off-white;
     font-family: $montserrat;
+    background: darken($bg-color, 5%);
     outline: none;
     border:none;
-    background: transparent;
     &:focus{
         & + label{
             color: $sky-color;
@@ -47,6 +48,9 @@
     resize: none;
 }
 
+.contact-form #textarea-container{
+    padding-top: 1rem;
+}
 .contact-form #textarea-container label{
     margin-top: .1rem;
     vertical-align: top;
@@ -70,15 +74,15 @@
 .contact-form #submit{
     color:#ebf1f8;
     background:#009688;
-    border-bottom: .4rem solid #00796b;
+    border-bottom: .4rem solid #35817a;
     box-shadow: 0 .3rem .3rem rgba(#000000,.7); 
     margin-bottom: 2rem;
     @media(min-width:$medium-device){
         margin-bottom: 0;
     }
     &:hover{
-        background:#00796b;
-        border-bottom: .2rem solid #00796b;
+        background:#35817a;
+        border-bottom: .2rem solid #35817a;
         margin-bottom: 2.2rem;
         @media(min-width:$medium-device){
             margin-bottom: .2rem;
@@ -94,13 +98,13 @@
 
 .contact-form #download{
     color:#ebf1f8;
-    background:#c60202;
-    border-bottom: .4rem solid darken(#c60202, 10%);
+    background:#41598d;
+    border-bottom: .4rem solid darken(#41598d, 10%);
     box-shadow: 0px .3rem .3rem rgba(#000000,.7); 
     margin-bottom: 0;
     &:hover{
-        background:darken(#c60202, 10%);
-        border-bottom: .2rem solid darken(#c60202, 10%);
+        background:darken(#41598d, 10%);
+        border-bottom: .2rem solid darken(#41598d, 10%);
         margin-bottom: .2rem;
     }
 }

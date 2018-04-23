@@ -4,7 +4,6 @@
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .filter-items li{
@@ -34,4 +33,118 @@
 
 .filter-items li.active{
     background: darken($primary-color, 10%);
+}
+
+.splash-layer{
+    position: fixed;
+    top:0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::before{
+        background: darken($bg-color, 10%);
+        display: block;
+        width: 100%;
+        height: 50%;
+        transform: translate3d(-100%, 0, 0);
+        content: '';
+    }
+    &::after{
+        background: $bg-color;
+        display: block;
+        width: 100%;
+        height: 50%;
+        transform: translate3d(-100%, 0, 0);
+        content: '';
+    }
+}
+
+.splash-layer span{
+    font-size: $medium-paragraph-fontSize;
+    font-family: $montserrat;
+    font-weight: bold;
+    color: $primary-color;
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    z-index:200;
+    opacity: 0;
+}
+
+.show-splash-layer{  
+    opacity: 1;
+    z-index:100;
+    &::before{
+        animation: before-show-bg .5s cubic-bezier(.65,.05,.1,1) forwards, before-hide-bg .5s 1s cubic-bezier(.65,.05,.1,1) forwards;
+    }
+    &::after{
+        animation: after-show-bg .5s cubic-bezier(.65,.05,.1,1) forwards, after-hide-bg .5s 1s cubic-bezier(.65,.05,.1,1) forwards;
+    }
+    span{
+        animation: show-span ease-out .2s .1s forwards, hide-span ease-out .2s .8s forwards;
+    }
+}
+
+@keyframes show-span{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes hide-span{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes before-show-bg{
+    0%{
+        transform: translate3d(100%, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes before-hide-bg{
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes after-show-bg{
+    0%{
+        transform: translate3d(-100%, 0, 0);
+    }
+    100%{
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes after-hide-bg{
+    0%{
+        transform: translate3d(0, 0, 0);
+    }
+    100%{
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+#projects-status{
+    margin-top: 2rem;
+    font-size: 1.6rem;
 }

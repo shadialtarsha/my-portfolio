@@ -1,12 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const PortfolioItem = ({ project }) => (
-  <div>
-    <Link to={`/portfolio/${project._id}`}>Project</Link>
+  <NavLink className="project-item" to={`/portfolio/${project._id}`}>
     <p>{project.title}</p>
     <p>{project.tags}</p>
-  </div>
+  </NavLink>
 );
 
 export default PortfolioItem;
