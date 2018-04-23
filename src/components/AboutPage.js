@@ -7,7 +7,7 @@ const AboutPage = () => (
   <div>
     <Menu />
     <div className="page">
-      <main className="centered" id="about">
+      <div className="centered" id="about">
         <div className="wrapper">
           <div className="about-container">
             <div className="avatar">
@@ -39,7 +39,7 @@ const AboutPage = () => (
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
     <NavLink to="/skills" className="arrow" id="arrow-right">
       <div id="right-arrow-link">skills</div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const LoadingPage = () => (
   <div className="page">
-    <main className="centered" id="loading-page">
+    <div className="centered" id="loading-page">
       <div className="wrapper">
         <div className="loading-container">
           <span className="loading">
@@ -16,7 +16,7 @@ const LoadingPage = () => (
           </span>
         </div>
       </div>
-    </main>
+    </div>
   </div>
 );
 

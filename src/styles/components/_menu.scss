@@ -9,7 +9,7 @@
     cursor: pointer;
     position: fixed;
     top: auto;
-    right: 1.5rem;
+    right: 2.5rem;
     bottom: 2rem;
     z-index: 9998;
     border-radius: 50%;
@@ -25,7 +25,7 @@
     }
     @media (min-width: $medium-device){
         top: 3.2rem;
-        right: 2rem;
+        right: 3rem;
     }
     &:before,
     &:after,

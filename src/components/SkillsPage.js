@@ -9,7 +9,7 @@ export const SkillsPage = ({ skills }) => (
   <div>
     <Menu />
     <div className="page">
-      <main className="centered" id="skills">
+      <div className="centered" id="skills">
         <div className="wrapper">
           <div className="skills_container">
             <header>
@@ -20,7 +20,7 @@ export const SkillsPage = ({ skills }) => (
             <Footer />
           </div>
         </div>
-      </main>
+      </div>
     </div>
     <NavLink to="/about" className="arrow" id="arrow-left">
       <div className="lines">

@@ -7,7 +7,7 @@ const ContactPage = () => (
   <div>
     <Menu />
     <div className="page">
-      <main className="centered" id="contact">
+      <div className="centered" id="contact">
         <div className="wrapper">
           <div className="contact_container">
             <header>
@@ -43,7 +43,7 @@ const ContactPage = () => (
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
     <NavLink to="/portfolio" className="arrow" id="arrow-left">
       <div className="lines">

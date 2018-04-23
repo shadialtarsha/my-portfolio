@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
 
 export const setSkills = (skills = []) => ({
   type: 'SET_SKILLS',

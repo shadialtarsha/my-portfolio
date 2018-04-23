@@ -45,7 +45,7 @@ export const ProjectPage = ({ projects, project }) => {
         <h1>{project.title}</h1>
         <p>{project.subtitle}</p>
       </header>
-      <main>
+      <div>
         <h2>Techniqual Sheet</h2>
         <p>{project.technicalSheet}</p>
         <h2>Technologies</h2>
@@ -57,7 +57,7 @@ export const ProjectPage = ({ projects, project }) => {
         </ul>
         <NavLink to="/skills">skills</NavLink>
         <NavLink to="/contact">contact</NavLink>
-      </main>
+      </div>
       <Footer />
     </div>
   );

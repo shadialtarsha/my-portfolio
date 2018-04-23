@@ -10,7 +10,7 @@ export const PortfolioPage = ({ projects }) => (
   <div>
     <Menu />
     <div className="page">
-      <main className="centered" id="portfolio">
+      <div className="centered" id="portfolio">
         <div className="wrapper">
           <div className="portfolio-container">
             <header>
@@ -26,7 +26,7 @@ export const PortfolioPage = ({ projects }) => (
             <Footer />
           </div>
         </div>
-      </main>
+      </div>
     </div>
     <NavLink to="/skills" className="arrow" id="arrow-left">
       <div className="lines">

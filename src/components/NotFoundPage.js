@@ -6,7 +6,7 @@ export const NotFoundPage = () => (
   <div>
     <Menu error="error" />
     <div className="page">
-      <main id="error" className="centered">
+      <div id="error" className="centered">
         <div className="wrapper">
           <div className="error__container">
             <h1>404 error</h1>
@@ -18,7 +18,7 @@ export const NotFoundPage = () => (
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   </div>
 );

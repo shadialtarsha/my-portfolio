@@ -31,9 +31,9 @@
     }
 
     #arrow-right{
-        right: 1.5rem;
+        right: 2.5rem;
         @media (min-width: $medium-device){
-            right: 2rem;
+            right: 3rem;
             &:hover{
                 #right-upper{
                     transform: rotate(45deg) translateY(.1rem); 

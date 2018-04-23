@@ -16,7 +16,7 @@ module.exports = env => {
   const mode = isProduction ? 'production' : 'development';
   return {
     mode,
-    entry: ['babel-polyfill', './src/app.js'],
+    entry: ['babel-polyfill', 'whatwg-fetch', './src/app.js'],
     output: {
       path: path.join(__dirname, 'public', 'dist'),
       filename: 'bundle.js',

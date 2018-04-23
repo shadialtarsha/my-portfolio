@@ -92,6 +92,11 @@
             animation: animated-percent65 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(65);
         }
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '65%';
+            }
+        }
     }
     .circular-progress70 {
         @include circular-progress(70, $primary-color);
@@ -100,6 +105,11 @@
         &::before{
             animation: animated-percent70 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(70);
+        }
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '70%';
+            }
         }
     }
     .circular-progress75 {
@@ -110,6 +120,11 @@
             animation: animated-percent75 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(75);
         }
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '75%';
+            }
+        }
     }
     .circular-progress80 {
         @include circular-progress(80, $primary-color);
@@ -118,6 +133,11 @@
         &::before{
             animation: animated-percent80 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(80);
+        }
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '80%';
+            }
         }
     }
     .circular-progress85 {
@@ -128,6 +148,11 @@
             animation: animated-percent85 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(85);
         }
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '85%';
+            }
+        }
     }
     .circular-progress90 {
         @include circular-progress(90, $primary-color);
@@ -137,6 +162,11 @@
             animation: animated-percent90 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(90);
         } 
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '90%';
+            }
+        }
     }
     .circular-progress95 {
         @include circular-progress(95, $primary-color);
@@ -146,6 +176,11 @@
             animation: animated-percent95 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(95);
         }
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '95%';
+            }
+        }
     }
     .circular-progress100 {
         @include circular-progress(100, $primary-color);
@@ -154,6 +189,11 @@
         &::before{
             animation: animated-percent100 1.0s ease-in-out .5s forwards;
             @include keyframesForPercent(100);
+        }
+        @supports (-ms-ime-align: auto) {
+            &::before {
+                  content: '100%';
+            }
         }
     }
     .circular-text {
