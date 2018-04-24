@@ -1,11 +1,16 @@
 #page-footer{
-    text-align: left;
-    font-size: 1.4rem;
-    margin-top: 4rem;
-    width: 75%;
-    @media (min-width: $small-device) {
-        width: 100%;
-        margin-top: 6rem;
-        font-size: none;
-    }
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#page-footer h3{
+    font-size: $small-title-fontSize;
+    line-height: $medium-paragraph-lineHeight;
+    text-align: center;
+    margin: 0;
+}
+#page-footer p{
+    font-size: $base-fontSize;
+    line-height: $medium-paragraph-lineHeight;
+    text-align: center;
 }

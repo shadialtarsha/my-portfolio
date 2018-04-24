@@ -21,9 +21,9 @@ export const PortfolioPage = ({ projects }) => (
             <div className="filters-container">
               <Filter />
             </div>
-            <div className="projects-container">
+            <ul className="projects-container">
               {projects.map(project => <PortfolioItem key={project._id} project={project} />)}
-            </div>
+            </ul>
             <Footer />
           </div>
         </div>

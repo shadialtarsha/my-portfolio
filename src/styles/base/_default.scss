@@ -1,18 +1,13 @@
-header{
-    margin-bottom: 1rem;
-    padding:1rem 1rem 0 0;
-}
-
 h1, h2, h3, h4, h5, h6{
     color: $title-color;
     font-family: $montserrat;
     font-weight: 700;
     text-shadow: 0 0 .1rem $title-color;
     text-align: left;
+    margin: 0 0 1rem 0;
 }
 
 h1{
-    margin: 1rem 0;
     font-size: $large-title-fontSize;
     line-height: $medium-title-lineHeight;
     @media (min-width: $large-device){
@@ -37,10 +32,39 @@ p{
     color: $paragraph-color;
     font-family: $lato;
     text-align: left;
-    line-height: $small-paragraph-lineHeight;
-    @media (min-width: $medium-device){
-        font-size: $medium-paragraph-fontSize;
-        line-height: $medium-paragraph-lineHeight;
+    font-size: $medium-paragraph-fontSize;
+    line-height: $medium-paragraph-lineHeight;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+}
+
+@mixin right-floating{
+    right: 1.3rem;
+    @media(min-width: $medium-device){
+        right: 2.3rem;
+    }
+    @media(min-width: $large-device){
+        right:3.8rem;
+    }
+    @media(min-width: $xxlarge-device){
+        right:8.3rem;
+    }
+}
+
+@mixin left-floating{
+    left: 1.3rem;
+    @media(min-width: $medium-device){
+        left: 2.3rem;
+    }
+    @media(min-width: $large-device){
+        left:3.8rem;
+    }
+    @media(min-width: $xxlarge-device){
+        left:8.3rem;
     }
 }
 
@@ -50,7 +74,5 @@ p{
 }
 .special-link{
     color: $primary-color;
-    cursor: pointer;
     font-weight: 700;
-    text-decoration: none;
 }

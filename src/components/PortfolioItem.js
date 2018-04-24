@@ -2,10 +2,16 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const PortfolioItem = ({ project }) => (
-  <NavLink className="project-item" to={`/portfolio/${project._id}`}>
-    <p>{project.title}</p>
-    <p>{project.tags}</p>
-  </NavLink>
+  <li className="project-item">
+    <NavLink className="project-item__container" to={`/portfolio/${project._id}`}>
+      <p className="project-title">{project.title}</p>
+      <div className="project-thumbnail">
+        <div className="curtain">
+          <ul>{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
+        </div>
+      </div>
+    </NavLink>
+  </li>
 );
 
 export default PortfolioItem;

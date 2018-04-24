@@ -8,6 +8,7 @@
 }
 
 #portfolio .portfolio-container .filters-container{
+    padding-left: 2rem;
     margin-bottom: 1rem;
 }
 
@@ -15,8 +16,94 @@
     text-align: center;
 }
 
+.projects-container{
+    min-height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
 .projects-container .project-item{
-    width: 50%;
+    width: 100%;
+    @media (min-width: $medium-device){
+        width: 50%;
+    }
+    height: 25rem;
     display: block;
+    padding: 2rem;
+}
+
+.projects-container .project-item .project-item__container{
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: block;
+    &:hover{
+        .curtain{
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+.projects-container .project-item .project-title{
+    background: white;
+    color: black;
+    text-align: center;
+    height: 15%;
+}
+
+.projects-container .project-item .project-thumbnail{
+    height: 85%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url('http://localhost:3333/project1/thumbnail.png');
+    position: relative;
+    overflow: hidden;
+}
+
+.curtain{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: rgba( darken($bg-color, 5%), .7);
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0, -100%, 0);
+}
+
+.curtain ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.curtain ul li{
+    font-family: $montserrat;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1em;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: inline-block;
+    padding: 8px 5px;
+    margin: 3px 3px 3px 0;
+    opacity: 1;
+    background: $primary-color;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 3px;
+    text-transform: uppercase;
+    overflow: hidden;
+    outline: none;
 }

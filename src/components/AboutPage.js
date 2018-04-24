@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
+import RightArrow from './RightArrow';
 import SocialMedia from './SocialMedia';
 
 const AboutPage = () => (
@@ -41,13 +42,7 @@ const AboutPage = () => (
         </div>
       </div>
     </div>
-    <NavLink to="/skills" className="arrow" id="arrow-right">
-      <div id="right-arrow-link">skills</div>
-      <div className="lines">
-        <div id="right-upper" className="line" />
-        <div id="right-lower" className="line" />
-      </div>
-    </NavLink>
+    <RightArrow to="skills" />
     <SocialMedia />
   </div>
 );

@@ -3,9 +3,10 @@
     top:0;
     left:0;
     text-align: center;
+    overflow-x: auto;
     height: 100%;
     width: 100%;
-    overflow-x: auto;
+    z-index: 1;
 }
 
 .page::-webkit-scrollbar {
@@ -19,5 +20,5 @@
  
 .page::-webkit-scrollbar-thumb {
   background-color: darkgrey;
-  outline: 1px solid slategrey;
+  outline: .1rem solid slategrey;
 }

@@ -18,11 +18,9 @@
 .circle{
     border-radius: 50%;
     box-shadow: 0 .2rem .5rem 0 rgba(0, 0, 0, 0.16), 0 .2rem 1rem 0 rgba(0, 0, 0, 0.12);
-    margin: 2em auto;
     position: relative;
     width: 10rem;
     height: 10rem;
-    margin: 1rem;
     &::before {
         background-color: #FAFAFA;
         border-radius: 50%;
@@ -70,7 +68,7 @@
 }
 
 .content {
-    width: 33.3%;
+    width: calc(100%/3);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -80,13 +78,13 @@
     @media (min-width: $medium-device){
         width: 20%;
     }
-    @media (min-width: $large-device){
-        width: 15%;
+    @media (min-width: $medium-device){
+        width: calc(100%/6);
     }
 }
  
 .group {
-    margin: 1rem;
+    padding: 1rem;
     .circular-progress65 {
         @include circular-progress(65, $primary-color);
         animation: animated-circle65 0.5s ease-in-out .5s forwards;
@@ -143,62 +141,6 @@
             }
         }
     }
-    // .circular-progress85 {
-    //     @include circular-progress(85, $primary-color);
-    //     animation: animated-circle85 1.0s ease-in-out .5s forwards;
-    //     @include keyframesForCircle(85);
-    //     &::before{
-    //         animation: animated-percent85 1.0s ease-in-out .5s forwards;
-    //         @include keyframesForPercent(85);
-    //     }
-    //     @supports (-ms-ime-align: auto) {
-    //         &::before {
-    //               content: '85%';
-    //         }
-    //     }
-    // }
-    // .circular-progress90 {
-    //     @include circular-progress(90, $primary-color);
-    //     animation: animated-circle90 1.0s ease-in-out .5s forwards;
-    //     @include keyframesForCircle(90);
-    //     &::before{
-    //         animation: animated-percent90 1.0s ease-in-out .5s forwards;
-    //         @include keyframesForPercent(90);
-    //     } 
-    //     @supports (-ms-ime-align: auto) {
-    //         &::before {
-    //               content: '90%';
-    //         }
-    //     }
-    // }
-    // .circular-progress95 {
-    //     @include circular-progress(95, $primary-color);
-    //     animation: animated-circle95 1.0s ease-in-out .5s forwards;
-    //     @include keyframesForCircle(95);
-    //     &::before{
-    //         animation: animated-percent95 1.0s ease-in-out .5s forwards;
-    //         @include keyframesForPercent(95);
-    //     }
-    //     @supports (-ms-ime-align: auto) {
-    //         &::before {
-    //               content: '95%';
-    //         }
-    //     }
-    // }
-    // .circular-progress100 {
-    //     @include circular-progress(100, $primary-color);
-    //     animation: animated-circle100 1.0s ease-in-out .5s forwards;
-    //     @include keyframesForCircle(100);
-    //     &::before{
-    //         animation: animated-percent100 1.0s ease-in-out .5s forwards;
-    //         @include keyframesForPercent(100);
-    //     }
-    //     @supports (-ms-ime-align: auto) {
-    //         &::before {
-    //               content: '100%';
-    //         }
-    //     }
-    // }
     .circular-text {
         font-family: $montserrat;
         text-align: center;

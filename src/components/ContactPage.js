@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
 import ContactForm from './ContactForm';
+import LeftArrow from './LeftArrow';
 
 const ContactPage = () => (
   <div>
@@ -45,13 +45,7 @@ const ContactPage = () => (
         </div>
       </div>
     </div>
-    <NavLink to="/portfolio" className="arrow" id="arrow-left">
-      <div className="lines">
-        <div id="left-upper" className="line" />
-        <div id="left-lower" className="line" />
-      </div>
-      <div id="left-arrow-link">portfolio</div>
-    </NavLink>
+    <LeftArrow to="portfolio" />
   </div>
 );
 
