@@ -21,6 +21,7 @@
     position: relative;
     width: 10rem;
     height: 10rem;
+    margin: 1rem;
     &::before {
         background-color: #FAFAFA;
         border-radius: 50%;
@@ -68,23 +69,22 @@
 }
 
 .content {
-    width: calc(100%/3);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    @media (min-width: $small-device){
+    width: 33.33%;
+    @media (min-width: $medium-device) {
         width: 25%;
     }
-    @media (min-width: $medium-device){
+    @media (min-width: $large-device) {
         width: 20%;
     }
-    @media (min-width: $medium-device){
-        width: calc(100%/6);
+    @media (min-width: $xlarge-device) {
+        width: calc(100%/7);
     }
 }
  
 .group {
-    padding: 1rem;
     .circular-progress65 {
         @include circular-progress(65, $primary-color);
         animation: animated-circle65 0.5s ease-in-out .5s forwards;
@@ -94,6 +94,15 @@
             @include keyframesForPercent(65);
         }
         @supports (-ms-ime-align: auto) {
+            animation: none;
+            background: circular-progress(100, 65, $primary-color, #E0E0E0);
+            &::before {
+                  content: '65%';
+            }
+        }
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+            animation: none;
+            background: circular-progress(100, 65, $primary-color, #E0E0E0);
             &::before {
                   content: '65%';
             }
@@ -108,6 +117,15 @@
             @include keyframesForPercent(70);
         }
         @supports (-ms-ime-align: auto) {
+            animation: none;
+            background: circular-progress(100, 70, $primary-color, #E0E0E0);
+            &::before {
+                  content: '70%';
+            }
+        }
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+            animation: none;
+            background: circular-progress(100, 70, $primary-color, #E0E0E0);
             &::before {
                   content: '70%';
             }
@@ -122,6 +140,15 @@
             @include keyframesForPercent(75);
         }
         @supports (-ms-ime-align: auto) {
+            animation: none;
+            background: circular-progress(100, 75, $primary-color, #E0E0E0);
+            &::before {
+                  content: '75%';
+            }
+        }
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+            animation: none;
+            background: circular-progress(100, 75, $primary-color, #E0E0E0);
             &::before {
                   content: '75%';
             }
@@ -136,6 +163,15 @@
             @include keyframesForPercent(80);
         }
         @supports (-ms-ime-align: auto) {
+            animation: none;
+            background: circular-progress(100, 80, $primary-color, #E0E0E0);
+            &::before {
+                  content: '80%';
+            }
+        }
+        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+            animation: none;
+            background: circular-progress(100, 80, $primary-color, #E0E0E0);
             &::before {
                   content: '80%';
             }
