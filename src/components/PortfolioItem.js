@@ -8,6 +8,9 @@ const PortfolioItem = ({ project }) => (
       <div className="project-thumbnail">
         <div className="curtain">
           <ul>{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
+          <div className="curtain__more">
+            <p>more...</p>
+          </div>
         </div>
       </div>
     </NavLink>

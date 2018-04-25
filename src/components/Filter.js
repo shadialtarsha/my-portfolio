@@ -25,6 +25,7 @@ export class Filter extends React.Component {
   state = {
     currentFilter: 'SHOW ALL',
   };
+
   componentDidMount() {
     this.props.setFilter(tags[0]);
   }
