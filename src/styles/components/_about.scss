@@ -8,6 +8,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media screen and (-ms-high-contrast: none) {
+        display: block;
+        @media(min-width: $large-device + 10em){
+            display: flex;
+        }
+    }
 }
 
 #about .about-container .avatar{
@@ -19,6 +25,12 @@
     @media(min-width: $small-device){
         width: 20rem;
         height: 20rem;
+    }
+    @media screen and (-ms-high-contrast: none) {
+        margin: 0 auto;
+        @media(min-width: $large-device + 10em){
+            margin: 0;
+        }
     }
 }
 
