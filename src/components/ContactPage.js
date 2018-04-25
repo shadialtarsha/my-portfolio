@@ -20,7 +20,7 @@ const ContactPage = () => (
             </header>
             <ContactForm />
             <div className="social-media-container">
-              <h3>Let's get social</h3>
+              <h2>Let's get social</h2>
               <p>You can follow me on facebook, github, twitter, or on instagram.</p>
               <div className="buttons-social-media">
                 <button id="facebook-button">
@@ -34,10 +34,6 @@ const ContactPage = () => (
                 <button id="twitter-button">
                   <i className="fab fa-twitter fa-inverse logo" />
                   <span>Twitter</span>
-                </button>
-                <button id="instagram-button">
-                  <i className="fab fa-instagram logo" />
-                  <span>instagram</span>
                 </button>
               </div>
             </div>

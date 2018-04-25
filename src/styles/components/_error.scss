@@ -1,25 +1,7 @@
 #error{
     background-color: $error-bg-color;
-    height: 100%;
-    width:100%;
-}
-
-.error__container{
-    text-align: left;
-    align-items: center; 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     height: 100%;
-}
-
-.error__container h1{
-    color: $off-white;
-    width: 100%;
-}
-
-.error__container div{
-    width: 100%;
 }
 
 .error__container p{
@@ -28,11 +10,12 @@
 }
 
 .error__container a{
+    display: block;
     color: $white-color;
     font-family: $montserrat;
     font-size: 1.2rem;
     font-weight: 700;
-    text-decoration: underline;
-    display: block;
     margin-top: 1.2rem;
+    text-align: left;
+    text-decoration: underline;
 }

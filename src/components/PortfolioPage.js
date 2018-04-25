@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
+import LeftArrow from './LeftArrow';
+import RightArrow from './RightArrow';
 import Footer from './Footer';
 import PortfolioItem from './PortfolioItem';
 import Filter from './Filter';
@@ -29,20 +30,8 @@ export const PortfolioPage = ({ projects }) => (
         </div>
       </div>
     </div>
-    <NavLink to="/skills" className="arrow" id="arrow-left">
-      <div className="lines">
-        <div id="left-upper" className="line" />
-        <div id="left-lower" className="line" />
-      </div>
-      <div id="left-arrow-link">skills</div>
-    </NavLink>
-    <NavLink to="/contact" className="arrow" id="arrow-right">
-      <div id="right-arrow-link">contact</div>
-      <div className="lines">
-        <div id="right-upper" className="line" />
-        <div id="right-lower" className="line" />
-      </div>
-    </NavLink>
+    <LeftArrow to="skills" />
+    <RightArrow to="contact" />
   </div>
 );
 

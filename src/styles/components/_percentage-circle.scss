@@ -52,7 +52,7 @@
     @keyframes animated-circle#{$percent} {
         @for $i from 0 through 10{
             #{$i * 10%}{
-                background: circular-progress(100, ($percent/100)*($i*10), $sky-color, #E0E0E0);
+                background: circular-progress(100, ($percent/100)*($i*10), $primary-color, #E0E0E0);
             }
         }
     }

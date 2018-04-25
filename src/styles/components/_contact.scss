@@ -1,68 +1,51 @@
-#contact{
-    width: 100%;
-}
-
 .contact_container{
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    min-height: 80%;
     width: 100%;
-}
-
-.contact_container header{
-    margin-bottom: 2rem;
 }
 
 .contact_container .social-media-container{
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
     width: 100%;
-}
-
-.contact_container .contact-form{
-    margin-bottom: 2rem;
-    padding:1rem;
-    @media (min-width: $large-device){
-        width: 75%;
+    margin-top: 5rem;
+    @media(min-width: $large-device){
+        margin-top: 7rem;
     }
 }
-.contact_container .social-media-container{
-    padding: 1rem;
-}
-
-.contact_container button{
-    text-transform: uppercase;
-    color:#ebf1f8;
-    font-weight: 700;
-    font-family: $montserrat;
-    border:none;
-    padding: 0.8em 2rem;
-    transition: all .2s ease-in;
-    line-height: 1.75em;
-}
-
 
 .contact_container .social-media-container p{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.contact_container .social-media-container h2{
+    text-shadow: none;
 }
 
 .contact_container .buttons-social-media{
-    color: $white-color;
-    font-size: 1.2rem;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    @media (min-width: $small-device) {
+        flex-direction: row;
+    }
     & button{
+        color: $white-color;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: $montserrat;
+        border:none;
+        transition: all .2s ease-in;
+        line-height: 1.75em;
         cursor: pointer;
-        margin-right: 1rem;
-        margin-bottom: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 1rem;
+        padding: 0.8em 2rem;
+        margin-bottom: 2rem;
     }
     .logo{
         font-size: 2.0rem;
@@ -95,17 +78,6 @@
         box-shadow: 0px .3rem .3rem rgba(#000000,.7); 
         &:hover{
             background:darken($twitter-color, 10%);
-            border-bottom-width: .2rem;
-            margin-bottom: 2.2rem;
-        }
-    }
-    #instagram-button{
-        color: #262626;
-        background: $white-color;
-        border-bottom: .4rem solid rgba(0,0,0,0.3);
-        box-shadow: 0px .3rem .3rem rgba(#000000,.7); 
-        &:hover{
-            background: darken(#8a8a8a, 10%);
             border-bottom-width: .2rem;
             margin-bottom: 2.2rem;
         }
