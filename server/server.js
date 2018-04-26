@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3333;
 const publicPath = path.join(__dirname, '..', 'public');
 app.use(express.static(publicPath));
-app.use(express.static(path.join(__dirname, 'images')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(
   cors({
     origin: 'http://localhost:9000',

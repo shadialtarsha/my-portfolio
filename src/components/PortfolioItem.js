@@ -5,7 +5,10 @@ const PortfolioItem = ({ project }) => (
   <li className="project-item">
     <NavLink className="project-item__container" to={`/portfolio/${project._id}`}>
       <p className="project-title">{project.title}</p>
-      <div className="project-thumbnail">
+      <div
+        className="project-thumbnail"
+        style={{ backgroundImage: `url(http://localhost:3333/images/${project._id}/image1.PNG)` }}
+      >
         <div className="curtain">
           <ul>{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
           <div className="curtain__more">

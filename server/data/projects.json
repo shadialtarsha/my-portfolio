@@ -1,10 +1,10 @@
 {
     "projects": [
         {
-            "_id": "project1",
+            "_id": "expensify",
             "title": "Expensify",
             "subtitle": "Front-end web application helps users to manage thier expenses.",
-            "technicalSheet": "I made this app to implement all what I learned about ReactJs and Redux. I learned tons of things while I was building this project such as implementing client routing, use SASS, and apply middleware to Readux using Readux thunk. As all of my projects I test my code using Jest and Enzyme which are very great combination for testing React apps.",
+            "technicalSheet": "I made this app to implement all what I've been learning about ReactJs and Redux. I learned tons of things while I was building this project such as implementing client routing, using SASS, and apply middleware to Readux using Readux thunk. As all of my projects I tested my code using Jest and Enzyme which are very great combination for testing React apps.",
             "technologies": [
                 "HTML5",
                 "SASS",
@@ -36,7 +36,7 @@
             ]
         },
         {
-            "_id": "project2",
+            "_id": "indecision",
             "title": "Indecision",
             "subtitle": "Front-end web application helps users to make a decision via computer.",
             "technicalSheet": "The main reason for making this app was to emphasize my knowleadge about testing and structuring projects and implement advanced stuff like React, Redux and client routing.",
@@ -71,34 +71,7 @@
             ]
         },
         {
-            "_id": "project3",
-            "title": "Chat App with Socket.io",
-            "subtitle": "Create or join a chat room and exhange messages with other.",
-            "technicalSheet": "This app was my first experience of realtime web applications. I used socket.io library to enable realtime, bi-directional communtication between users via NodeJs server.",
-            "technologies": [
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "NodeJs",
-                "ExpressJs",
-                "Mustach",
-                "Mocha",
-                "expect"
-            ],
-            "resources": {
-                "online": "https://github.com/shadialtarsha/chat-app-socketio",
-                "github": "https://shadi-chat-app.herokuapp.com/"
-            },
-            "tags": [
-                "JavaScript",
-                "socket.io",
-                "NodeJs",
-                "ExpressJs",
-                "Mocha"
-            ]
-        },
-        {
-            "_id": "project4",
+            "_id": "todo-app",
             "title": "Todo App",
             "subtitle": "Simple FullStack app for recording my todos.",
             "technicalSheet": "This app was my entrance to FullStack apps. Using MongoDB and ExpressJs to create a RESTFUL API for serving the necessary data for the frontend app. I used jQuery's ajax implementaion to call the API.",
@@ -127,6 +100,33 @@
                 "Mongoose",
                 "RESTFUL API",
                 "AJAX"
+            ]
+        },
+        {
+            "_id": "chat-app-with-socketio",
+            "title": "Chat App with Socket.io",
+            "subtitle": "Create or join a chat room and exhange messages with other.",
+            "technicalSheet": "This app was my first experience of realtime web applications. I used socket.io library to enable realtime, bi-directional communtication between users via NodeJs server.",
+            "technologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "NodeJs",
+                "ExpressJs",
+                "Mustach",
+                "Mocha",
+                "expect"
+            ],
+            "resources": {
+                "online": "https://github.com/shadialtarsha/chat-app-socketio",
+                "github": "https://shadi-chat-app.herokuapp.com/"
+            },
+            "tags": [
+                "JavaScript",
+                "socket.io",
+                "NodeJs",
+                "ExpressJs",
+                "Mocha"
             ]
         }
     ]
