@@ -1,0 +1,29 @@
+.rightSlide-enter-active{
+    @include menuSlideIn(2);
+    @include arrowsSlideIn(2.1);
+    animation: slideInFromRight .8s both ease-out 1.2s;
+}
+
+.leftSlide-enter-active{
+    @include menuSlideIn(2);
+    @include arrowsSlideIn(2.1);
+    animation: slideInFromLeft .8s both ease-out 1.2s;
+}
+
+@keyframes slideInFromRight {
+    from{
+        transform: translate3d(200%,0,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from{
+        transform: translate3d(-200%,0,0);
+    }
+    to{
+        transform: translate3d(0,0,0);
+    }
+}

@@ -6,7 +6,7 @@
     flex-direction: column;
     z-index: 3;
     @media (min-width: $medium-device), (orientation : landscape){
-        top: calc(50% - 115px);
+        top: calc(50vh - 115px);
         left: 0;
         bottom: auto;
     }

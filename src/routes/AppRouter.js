@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import { TransitionGroup, CSSTransition } from 'react-transition-group';
+import Transitions from './Transitions';
 import AboutPage from '../components/AboutPage';
 import NotFoundPage from '../components/NotFoundPage';
 import SkillsPage from '../components/SkillsPage';
@@ -12,19 +12,17 @@ const AppRouter = () => (
   <Router>
     <Route
       render={({ location }) => (
-        <TransitionGroup>
-          <CSSTransition key={location.key} classNames="hide" timeout={300}>
-            <Switch>
-              <Route path="/" render={() => <Redirect to="/about" />} exact />
-              <Route path="/about" component={AboutPage} />
-              <Route path="/skills" component={SkillsPage} />
-              <Route path="/portfolio" component={PortfolioPage} exact />
-              <Route path="/portfolio/:id" component={ProjectPage} />
-              <Route path="/contact" component={ContactPage} />
-              <Route component={NotFoundPage} error="error-page" />
-            </Switch>
-          </CSSTransition>
-        </TransitionGroup>
+        <Transitions pageKey={location.key} {...location.state}>
+          <Switch location={location}>
+            <Route path="/" render={() => <Redirect to="/about" />} exact />
+            <Route path="/about" component={AboutPage} />
+            <Route path="/skills" component={SkillsPage} />
+            <Route path="/portfolio" component={PortfolioPage} exact />
+            <Route path="/portfolio/:id" component={ProjectPage} />
+            <Route path="/contact" component={ContactPage} />
+            <Route component={NotFoundPage} error="error-page" />
+          </Switch>
+        </Transitions>
       )}
     />
   </Router>

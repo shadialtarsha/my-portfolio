@@ -1,0 +1,74 @@
+@mixin slideRightArrowOut{
+    .arrow-right{
+        transform: translate3d(100px, 0, 0);
+        opacity: 0;
+        transition: transform .3s cubic-bezier(.65,1.55,.5,1.3) .6s, opacity .1s cubic-bezier(.65,1.55,.5,1.3) .7s;
+        .arrow__link{
+            opacity: 0;
+            transform: translateX(-3rem);
+            transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .lines .arrow__line--right-upper, .lines .arrow__line--right-lower{
+            transform: rotate(0deg) translateY(0);
+            transition: transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+    .arrow-left{
+        transform: translate3d(-100px, 0, 0);
+        opacity: 0;
+        transition: transform .3s cubic-bezier(.65,1.55,.5,1.3) .5s, opacity .1s cubic-bezier(.65,1.55,.5,1.3) .7s;
+    }
+}
+
+@mixin slideLeftArrowOut{
+    .arrow-left{
+        transform: translate3d(-100px, 0, 0);
+        opacity: 0;
+        transition: transform .3s cubic-bezier(.65,1.55,.5,1.3) .6s, opacity .1s cubic-bezier(.65,1.55,.5,1.3) .7s;
+        .arrow__link{
+            opacity: 0;
+            transform: translateX(-3rem);
+            transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        .lines .arrow__line--left-upper, .lines .arrow__line--left-lower{
+            transform: rotate(0deg) translateY(0);
+            transition: transform .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    }
+    .arrow-right{
+        transform: translate3d(100px, 0, 0);
+        opacity: 0;
+        transition: transform .3s cubic-bezier(.65,1.55,.5,1.3) .5s, opacity .1s cubic-bezier(.65,1.55,.5,1.3) .7s;
+    }
+}
+
+@mixin arrowsSlideIn($delay){
+    .arrow-right{
+        opacity: 0;
+        animation: rightArrowIn .2s cubic-bezier(.65,1.55,.5,1.3) #{$delay}s forwards;
+    }
+    .arrow-left{
+        opacity: 0;
+        animation: leftArrowIn .2s cubic-bezier(.65,1.55,.5,1.3) #{$delay}s forwards;
+    }
+    @keyframes rightArrowIn{
+        from{
+            opacity: 1;
+            transform: translate3d(100px, 0, 0);
+        }
+        to{
+            opacity: 1;
+            transform: translate3d(0,0,0);
+        }
+    }
+    @keyframes leftArrowIn{
+        from{
+            opacity: 1;
+            transform: translate3d(-100px, 0, 0);
+        }
+        to{
+            opacity: 1;
+            transform: translate3d(0,0,0);
+        }
+    }
+}

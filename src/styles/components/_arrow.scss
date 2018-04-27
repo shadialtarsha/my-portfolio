@@ -6,7 +6,7 @@
 @media (min-width: $medium-device){
    .arrow{
     position: absolute;
-    top: 48%;
+    top: 48vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,17 +27,17 @@
         transition: all .3s linear;
     }
     .lines div:nth-of-type(1){
-        transform: rotate(45deg) translateY(.2rem);
+        transform: rotate(45deg) translateY(.1rem);
     }
     .lines div:nth-of-type(2){
-        transform: rotate(-45deg) translateY(-.2rem);
+        transform: rotate(-45deg) translateY(-.1rem);
     }
     .arrow:hover{
         .lines div:nth-of-type(1){
-            transform: rotate(60deg) translateY(.2rem); 
+            transform: rotate(60deg) translateY(.1rem); 
         }
         .lines div:nth-of-type(2){
-            transform: rotate(-60deg) translateY(-.2rem); 
+            transform: rotate(-60deg) translateY(-.1rem); 
         }
         @media(min-width: $large-device){
             .arrow__link{

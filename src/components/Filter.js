@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { setFilter } from '../actions/filter';
 import filterProjects from '../selectors/filterProjects';
 

@@ -42,7 +42,9 @@ const AboutPage = () => (
         </div>
       </div>
     </div>
+
     <RightArrow to="skills" />
+
     <SocialMedia />
   </div>
 );

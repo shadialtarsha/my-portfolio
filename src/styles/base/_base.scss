@@ -6,12 +6,16 @@
 
 html{
     font-size: 62.5%;
+    height: 100vh;
+    width: 100vw;
 }
 
 body{
-    background: $bg-color;
+    background: darken($bg-color, 5%);
     color: $paragraph-color;
     font-family: $lato;
     font-size: $base-fontSize;
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
 }
