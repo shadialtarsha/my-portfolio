@@ -6,7 +6,7 @@ export const setSkills = (skills = []) => ({
 });
 
 export const startSetSkills = () => dispatch => {
-  const url = 'https://shadi-my-portfolio.herokuapp.com/api/skills';
+  const url = 'http://localhost:3333/api/skills';
   return fetch(url)
     .then(response => response.json())
     .then(data => dispatch(setSkills(data.skills)))
