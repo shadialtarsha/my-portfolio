@@ -1,7 +1,10 @@
 .social-media{
-    position: absolute;
+    position: fixed;
     top:auto;
-    bottom: 3rem;
+    bottom: 1rem;
+    @media (min-width: $medium-device), (orientation : landscape){
+        bottom: 3rem;
+    }
     display: flex;
     flex-direction: column;
     z-index: 3;
