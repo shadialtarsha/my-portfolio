@@ -14,7 +14,20 @@ export const NotFoundPage = () => (
               <p>Wow! Something went wrong.</p>
               <p>The page you are trying to access does not exist.</p>
               <p>Click on the link below to return to the website.</p>
-              <NavLink to="/">Return to the website</NavLink>
+              <NavLink
+                to={{
+                  pathname: `/about`,
+                  state: {
+                    transition: {
+                      enterActive: 'leftSlide-enter-active',
+                      exitActive: 'leftSlide-exit-active',
+                    },
+                    duration: 2800,
+                  },
+                }}
+              >
+                Return to the website
+              </NavLink>
             </div>
           </div>
         </div>

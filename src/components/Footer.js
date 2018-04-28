@@ -10,7 +10,19 @@ const Footer = () => (
     </p>
     <p>
       or drop a line in the form at the{' '}
-      <NavLink className="special-link" to="/contact">
+      <NavLink
+        className="special-link"
+        to={{
+          pathname: `/contact`,
+          state: {
+            transition: {
+              enterActive: 'navRightSlide-enter-active',
+              exitActive: 'navRightSlide-exit-active',
+            },
+            duration: 2800,
+          },
+        }}
+      >
         contact page
       </NavLink>.
     </p>

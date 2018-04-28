@@ -26,14 +26,38 @@ const AboutPage = () => (
               </p>
               <p>
                 Check out my projects in the{' '}
-                <NavLink className="special-link" to="/portfolio">
+                <NavLink
+                  className="special-link"
+                  to={{
+                    pathname: `/portfolio`,
+                    state: {
+                      transition: {
+                        enterActive: 'navRightSlide-enter-active',
+                        exitActive: 'navRightSlide-exit-active',
+                      },
+                      duration: 2800,
+                    },
+                  }}
+                >
                   portfolio page
                 </NavLink>.
               </p>
               <p>
                 If you want to make something exsiting together, feel free to email me at{' '}
                 <span className="special-word">work@shadialtarsha.com</span> or fill a form in the{' '}
-                <NavLink className="special-link" to="/contact">
+                <NavLink
+                  className="special-link"
+                  to={{
+                    pathname: `/contact`,
+                    state: {
+                      transition: {
+                        enterActive: 'navRightSlide-enter-active',
+                        exitActive: 'navRightSlide-exit-active',
+                      },
+                      duration: 2800,
+                    },
+                  }}
+                >
                   contact page
                 </NavLink>.
               </p>
@@ -42,9 +66,7 @@ const AboutPage = () => (
         </div>
       </div>
     </div>
-
     <RightArrow to="skills" />
-
     <SocialMedia />
   </div>
 );

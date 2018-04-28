@@ -98,10 +98,8 @@ class Menu extends React.Component {
               pathname: `/contact`,
               state: {
                 transition: {
-                  enterActive:
-                    this.props.location.pathname !== '/contact' ? 'navRightSlide-enter-active' : 'sameNav-enter-active',
-                  exitActive:
-                    this.props.location.pathname !== '/contact' ? 'navRightSlide-exit-active' : 'sameNav-exit-active',
+                  enterActive: 'navRightSlide-enter-active',
+                  exitActive: 'navRightSlide-exit-active',
                 },
                 duration: 2800,
               },
