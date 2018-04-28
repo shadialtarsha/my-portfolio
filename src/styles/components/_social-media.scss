@@ -1,6 +1,6 @@
 .social-media{
     display: none;
-    @media (min-height: 650px){
+    @media (min-height: 650px) , (min-width: $small-device){
         display: flex;
     }
     position: absolute;
