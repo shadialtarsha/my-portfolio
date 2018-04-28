@@ -1,11 +1,12 @@
 .social-media{
-    position: fixed;
-    top:auto;
-    bottom: 1rem;
-    @media (min-width: $medium-device), (orientation : landscape){
-        bottom: 3rem;
+    display: none;
+    @media (min-height: 650px){
+        display: flex;
     }
-    display: flex;
+    position: absolute;
+    top:auto;
+    bottom: 3rem;
+    
     flex-direction: column;
     z-index: 3;
     @media (min-width: $medium-device), (orientation : landscape){
@@ -46,10 +47,7 @@
 }
 
 .social-media ul li a .stack-style{
-    font-size: 1.9rem;
-    @media (min-height: 650px) , (min-width: $small-device) {
-        font-size: 2.3rem;
-    }
+    font-size: 2.3rem;
     @media (min-width: $medium-device), (orientation : landscape){
         font-size: 2.5rem;
     }
@@ -75,8 +73,5 @@
 }
 
 .social-media ul li a .icon{
-    font-size: 2.5rem;
-    @media (min-height: 650px) , (min-width: $small-device) {
-        font-size: 3rem;
-    }
+    font-size: 3rem;
 }
