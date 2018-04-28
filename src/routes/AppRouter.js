@@ -14,8 +14,8 @@ const AppRouter = () => (
       render={({ location }) => (
         <Transitions pageKey={location.key} {...location.state}>
           <Switch location={location}>
-            <Route path="/" render={() => <Redirect to="/about" />} exact />
-            <Route path="/about" component={AboutPage} />
+            <Route path="/about" component={AboutPage} exact />
+            <Route path="/" render={() => <Redirect from="/" to="/about" exact />} exact />
             <Route path="/skills" component={SkillsPage} />
             <Route path="/portfolio" component={PortfolioPage} exact />
             <Route path="/portfolio/:id" component={ProjectPage} />

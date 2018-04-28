@@ -17,16 +17,19 @@ class Menu extends React.Component {
               pathname: `/about`,
               state: {
                 transition: {
-                  enterActive: 'leftSlide-enter-active',
-                  exitActive: 'leftSlide-exit-active',
+                  enterActive: 'navLeftSlide-enter-active',
+                  exitActive: 'navLeftSlide-exit-active',
                 },
-                duration: 2800,
+                duration: this.props.location.pathname === '/about' ? 400 : 2800,
               },
             }}
             activeClassName="active"
-            onClick={() => {
-              document.querySelector('#page-header .burger-icon').classList.add('open-slide');
+            onClick={e => {
               document.querySelector('#page-header').classList.toggle('hidden');
+              if (this.props.location.pathname === '/about') {
+                document.querySelector('#page-header .burger-icon').classList.toggle('open');
+                e.preventDefault();
+              }
             }}
           >
             <span>about</span>
@@ -38,17 +41,24 @@ class Menu extends React.Component {
               state: {
                 transition: {
                   enterActive:
-                    this.props.location.pathname === '/about' ? 'rightSlide-enter-active' : 'leftSlide-enter-active',
+                    this.props.location.pathname === '/about'
+                      ? 'navRightSlide-enter-active'
+                      : 'navLeftSlide-enter-active',
                   exitActive:
-                    this.props.location.pathname === '/about' ? 'rightSlide-exit-active' : 'leftSlide-exit-active',
+                    this.props.location.pathname === '/about'
+                      ? 'navRightSlide-exit-active'
+                      : 'navLeftSlide-exit-active',
                 },
                 duration: 2800,
               },
             }}
             activeClassName="active"
-            onClick={() => {
-              document.querySelector('#page-header .burger-icon').classList.add('open-slide');
+            onClick={e => {
               document.querySelector('#page-header').classList.toggle('hidden');
+              if (this.props.location.pathname === '/skills') {
+                document.querySelector('#page-header .burger-icon').classList.toggle('open');
+                e.preventDefault();
+              }
             }}
           >
             <span>skills</span>
@@ -60,17 +70,24 @@ class Menu extends React.Component {
               state: {
                 transition: {
                   enterActive:
-                    this.props.location.pathname === '/contact' ? 'leftSlide-enter-active' : 'rightSlide-enter-active',
+                    this.props.location.pathname === '/contact'
+                      ? 'navLeftSlide-enter-active'
+                      : 'navRightSlide-enter-active',
                   exitActive:
-                    this.props.location.pathname === '/contact' ? 'leftSlide-exit-active' : 'rightSlide-exit-active',
+                    this.props.location.pathname === '/contact'
+                      ? 'navLeftSlide-exit-active'
+                      : 'navRightSlide-exit-active',
                 },
                 duration: 2800,
               },
             }}
             activeClassName="active"
-            onClick={() => {
-              document.querySelector('#page-header .burger-icon').classList.add('open-slide');
+            onClick={e => {
               document.querySelector('#page-header').classList.toggle('hidden');
+              if (this.props.location.pathname === '/portfolio') {
+                document.querySelector('#page-header .burger-icon').classList.toggle('open');
+                e.preventDefault();
+              }
             }}
           >
             <span>portfolio</span>
@@ -81,16 +98,21 @@ class Menu extends React.Component {
               pathname: `/contact`,
               state: {
                 transition: {
-                  enterActive: 'rightSlide-enter-active',
-                  exitActive: 'rightSlide-exit-active',
+                  enterActive:
+                    this.props.location.pathname !== '/contact' ? 'navRightSlide-enter-active' : 'sameNav-enter-active',
+                  exitActive:
+                    this.props.location.pathname !== '/contact' ? 'navRightSlide-exit-active' : 'sameNav-exit-active',
                 },
                 duration: 2800,
               },
             }}
             activeClassName="active"
-            onClick={() => {
-              document.querySelector('#page-header .burger-icon').classList.add('open-slide');
+            onClick={e => {
               document.querySelector('#page-header').classList.toggle('hidden');
+              if (this.props.location.pathname === '/contact') {
+                document.querySelector('#page-header .burger-icon').classList.toggle('open');
+                e.preventDefault();
+              }
             }}
           >
             <span>contact</span>

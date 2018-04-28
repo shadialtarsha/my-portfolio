@@ -1,4 +1,4 @@
 .pageLoad-appear-active{
-    @include menuSlideIn(.4);
-    @include arrowsSlideIn(.9);
+    @include menuSlideIn(.7);
+    @include arrowsSlideIn(1.2);
 }

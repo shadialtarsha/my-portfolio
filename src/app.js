@@ -10,6 +10,8 @@ import { startSetSkills } from './actions/skills';
 import { startSetProjects } from './actions/projects';
 import './styles/styles.scss';
 
+console.log('Hey sneaky :)');
+
 const store = configureStore();
 let hasRender = false;
 

@@ -1,0 +1,23 @@
+.navLeftSlide-enter-active{
+    @include menuSlideIn(2.1);
+    @include arrowsSlideIn(2.6);
+    animation: slideInFromLeft .8s both ease-out 1.3s;
+}
+
+.navLeftSlide-exit-active{
+    @include arrowsSlideOutWhenMenuActive;
+    @include menuSlideOutWhenActive;
+    animation: slideOutToRight .8s both ease-out 1.3s;
+}
+
+.navRightSlide-enter-active{
+    @include menuSlideIn(2.1);
+    @include arrowsSlideIn(2.6);
+    animation: slideInFromRight .8s both ease-out 1.3s;
+}
+
+.navRightSlide-exit-active{
+    @include arrowsSlideOutWhenMenuActive;
+    @include menuSlideOutWhenActive;
+    animation: slideOutToLeft .8s both ease-out 1.3s;
+}

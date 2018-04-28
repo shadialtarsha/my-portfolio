@@ -7,7 +7,7 @@
 }
 
 #page-header.hidden .menu{
-    transform: translate3d(0, -100vh, 0);
+    transform: translate3d(0, -100%, 0);
 }
 
 #page-header.hidden .menu__link{
@@ -62,11 +62,6 @@
 
 .burger-icon.open .burger-icon__line3{ 
     transform: translateY(-1rem) rotate(225deg);
-}
-.burger-icon.open-slide{ 
-    transform: translateX(100px);
-    opacity: 0;
-    transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .burger-icon--white{
