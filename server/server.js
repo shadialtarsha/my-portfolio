@@ -10,12 +10,6 @@ const publicPath = path.join(__dirname, '..', 'public');
 app.use(express.static(publicPath));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
-// app.use(
-//   cors({
-//     origin: 'https://www.shadi-my-portfolio.herokuapp.com',
-//     credentials: true,
-//   })
-// );
 
 app.get('/api/skills', (req, res) => {
   res.header('Content-Type', 'application/json');
