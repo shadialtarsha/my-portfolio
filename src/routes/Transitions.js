@@ -3,7 +3,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 const childFactoryCreator = props => child => React.cloneElement(child, props);
 
-const Transitions = ({ transition = {}, duration = 2000, pageKey, children }) => (
+const Transitions = ({ transition = {}, duration = 1100, pageKey, children }) => (
   <TransitionGroup
     component={null}
     childFactory={childFactoryCreator({

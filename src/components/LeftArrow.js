@@ -10,7 +10,7 @@ const LeftArrow = ({ to }) => (
           enterActive: 'leftSlide-enter-active',
           exitActive: 'leftSlide-exit-active',
         },
-        duration: 2600,
+        duration: 2800,
       },
     }}
     className="arrow arrow-left"

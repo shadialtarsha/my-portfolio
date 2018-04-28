@@ -10,7 +10,7 @@ const RightArrow = ({ to }) => (
           enterActive: 'rightSlide-enter-active',
           exitActive: 'rightSlide-exit-active',
         },
-        duration: 2600,
+        duration: 2800,
       },
     }}
     className="arrow arrow-right"

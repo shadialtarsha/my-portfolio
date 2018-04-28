@@ -1,13 +1,13 @@
 .rightSlide-enter-active{
-    @include menuSlideIn(2);
-    @include arrowsSlideIn(2.1);
-    animation: slideInFromRight .8s both ease-out 1.2s;
+    @include menuSlideIn(2.1);
+    @include arrowsSlideIn(2.6);
+    animation: slideInFromRight .8s both ease-out 1.3s;
 }
 
 .leftSlide-enter-active{
-    @include menuSlideIn(2);
-    @include arrowsSlideIn(2.1);
-    animation: slideInFromLeft .8s both ease-out 1.2s;
+    @include menuSlideIn(2.1);
+    @include arrowsSlideIn(2.6);
+    animation: slideInFromLeft .8s both ease-out 1.3s;
 }
 
 @keyframes slideInFromRight {

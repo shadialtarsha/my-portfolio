@@ -1,13 +1,13 @@
 .rightSlide-exit-active{
     @include menuSlideOut;
     @include slideRightArrowOut;
-    animation: slideOutToLeft .8s both ease-out 1.2s;
+    animation: slideOutToLeft .8s both ease-out 1.3s;
 }
 
 .leftSlide-exit-active{
     @include menuSlideOut;
     @include slideLeftArrowOut;
-    animation: slideOutToRight .8s both ease-out 1.2s;
+    animation: slideOutToRight .8s both ease-out 1.3s;
 }
 
 

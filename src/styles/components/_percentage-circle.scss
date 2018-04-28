@@ -87,10 +87,10 @@
 .group {
     .circular-progress65 {
         @include circular-progress(65, $primary-color);
-        animation: animated-circle65 0.5s ease-in-out .5s forwards;
+        animation: animated-circle65 0.5s ease-in-out 2.5s forwards;
         @include keyframesForCircle(65);
         &::before{
-            animation: animated-percent65 0.5s ease-in-out .5s forwards;
+            animation: animated-percent65 0.5s ease-in-out 2.5s forwards;
             @include keyframesForPercent(65);
         }
         @supports (-ms-ime-align: auto) {
@@ -110,10 +110,10 @@
     }
     .circular-progress70 {
         @include circular-progress(70, $primary-color);
-        animation: animated-circle70 0.5s ease-in-out .5s forwards;
+        animation: animated-circle70 0.5s ease-in-out 2.5s forwards;
         @include keyframesForCircle(70);
         &::before{
-            animation: animated-percent70 0.5s ease-in-out .5s forwards;
+            animation: animated-percent70 0.5s ease-in-out 2.5s forwards;
             @include keyframesForPercent(70);
         }
         @supports (-ms-ime-align: auto) {
@@ -133,10 +133,10 @@
     }
     .circular-progress75 {
         @include circular-progress(75, $primary-color);
-        animation: animated-circle75 0.5s ease-in-out .5s forwards;
+        animation: animated-circle75 0.5s ease-in-out 2.5s forwards;
         @include keyframesForCircle(75);
         &::before{
-            animation: animated-percent75 0.5s ease-in-out .5s forwards;
+            animation: animated-percent75 0.5s ease-in-out 2.5s forwards;
             @include keyframesForPercent(75);
         }
         @supports (-ms-ime-align: auto) {
@@ -156,10 +156,10 @@
     }
     .circular-progress80 {
         @include circular-progress(80, $primary-color);
-        animation: animated-circle80 0.5s ease-in-out .5s forwards;
+        animation: animated-circle80 0.5s ease-in-out 2.5s forwards;
         @include keyframesForCircle(80);
         &::before{
-            animation: animated-percent80 0.5s ease-in-out .5s forwards;
+            animation: animated-percent80 0.5s ease-in-out 2.5s forwards;
             @include keyframesForPercent(80);
         }
         @supports (-ms-ime-align: auto) {
