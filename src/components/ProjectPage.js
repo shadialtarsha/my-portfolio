@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import Menu from './Menu';
 import ImageSlider from './ImageSlider';
 import Footer from './Footer';
@@ -39,11 +40,12 @@ export const ProjectPage = ({ projects, project }) => {
               <ImageSlider id={project._id} images={project.images} />
               <section>
                 <h2>Techniqual Sheet</h2>
-                <p>{project.technicalSheet}</p>
                 <hr />
+                <p>{project.technicalSheet}</p>
               </section>
               <section>
                 <h2>Technologies</h2>
+                <hr />
                 <ul>
                   {project.technologies.map(technology => (
                     <li key={`${project._id}${technology}`}>
@@ -51,21 +53,30 @@ export const ProjectPage = ({ projects, project }) => {
                     </li>
                   ))}
                 </ul>
-                <hr />
               </section>
               <section>
                 <h2>Resources</h2>
+                <hr />
                 <ul>
                   <li>
-                    <p>online: {project.resources.online}</p>
+                    <p>
+                      online:{' '}
+                      <a href={project.resources.online} target="_blank">
+                        {project.resources.online}
+                      </a>
+                    </p>
                   </li>
                   {project.resources.github && (
                     <li>
-                      <p>github: {project.resources.github}</p>
+                      <p>
+                        github:{' '}
+                        <a href={project.resources.github} target="_blank">
+                          {project.resources.github}
+                        </a>
+                      </p>
                     </li>
                   )}
                 </ul>
-                <hr />
               </section>
               <Footer />
             </div>

@@ -1,0 +1,32 @@
+.project-container section{
+    margin-top: 4rem;
+}
+.project-container section:last-of-type{
+    margin-bottom: 7rem;
+    ul li p{
+        font-weight: bold;
+    }
+    ul li p a{
+        text-decoration: underline;
+        font-weight: normal;
+        color:$paragraph-color;
+        cursor: pointer;
+        &:active{
+            color: darken($paragraph-color, 1%);
+        }
+    }
+}
+.project-container section hr{
+    margin-bottom: 1rem;
+    width: 50%;
+    border:none;
+    height: .1rem;
+    opacity: 0.7;
+    outline: none;
+    background: $primary-color;
+}
+
+.project-container section ul{
+    list-style-type: circle;
+    padding-left: 2rem;
+}
