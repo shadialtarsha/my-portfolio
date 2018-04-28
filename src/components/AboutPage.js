@@ -17,8 +17,8 @@ const AboutPage = () => (
             <div>
               <h3>Hello, My name is Shadi Al-Tarsha.</h3>
               <p>
-                <span className="special-word">I am a Software developer</span>, ambitious, self-motivated, team worker,
-                and a big believer in the self-taught approach.
+                I am a Software developer, ambitious, self-motivated, team worker, and a big believer in the self-taught
+                approach.
               </p>
               <p>
                 My favorite programming language is JavaScript, but Java was my best friend for the first 2 years of my
