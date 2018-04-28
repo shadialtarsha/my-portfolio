@@ -7,7 +7,7 @@ const PortfolioItem = ({ project }) => (
       <p className="project-title">{project.title}</p>
       <div
         className="project-thumbnail"
-        style={{ backgroundImage: `url(http://localhost:3333/images/${project._id}/image1.PNG)` }}
+        style={{ backgroundImage: `url(http://localhost:3333/images/${project._id}/${project.images[0]})` }}
       >
         <div className="curtain">
           <ul>{project.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>
