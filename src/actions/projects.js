@@ -6,7 +6,7 @@ export const setProjects = (projects = []) => ({
 });
 
 export const startSetProjects = () => dispatch => {
-  const url = 'http://localhost:3333/api/projects';
+  const url = 'https://shadi-my-portfolio.herokuapp.com/skills/api/projects';
   return fetch(url)
     .then(response => response.json())
     .then(data => dispatch(setProjects(data.projects)))

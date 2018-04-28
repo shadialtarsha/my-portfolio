@@ -15,6 +15,12 @@ app.use(
     credentials: true,
   })
 );
+app.use(
+  cors({
+    origin: 'https://shadi-my-portfolio.herokuapp.com',
+    credentials: true,
+  })
+);
 
 app.get('/api/skills', (req, res) => {
   res.header('Content-Type', 'application/json');
