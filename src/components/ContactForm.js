@@ -129,7 +129,7 @@ export class ContactForm extends Component {
           <button
             id="download"
             onClick={() => {
-              window.open('https://shadi-my-portfolio.herokuapp.com/resume', '_blank');
+              window.open('https://shadi-my-portfolio.herokuapp.com/portfolio/resume', '_blank');
             }}
           >
             My resume as pdf
