@@ -22,7 +22,7 @@ app.get('/api/projects', (req, res) => {
 });
 
 app.get('/portfolio/resume', (req, res) => {
-  res.download('./server/data/cv.txt', 'resume.txt');
+  res.download('./server/data/cv.pdf', 'Shadi Al-Tarsha.pdf');
 });
 
 app.get('*', (req, res) => {

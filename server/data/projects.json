@@ -3,8 +3,8 @@
         {
             "_id": "my-portfolio",
             "title": "My porfolio",
-            "subtitle": "Front-end web application helps users to manage thier expenses.",
-            "technicalSheet": "I made this app to implement all what I've been learning about ReactJs and Redux. I learned tons of things while I was building this project such as implementing client routing, using SASS, and apply middleware to Readux using Readux thunk. As all of my projects I tested my code using Jest and Enzyme which are very great combination for testing React apps.",
+            "subtitle": "FullStack application where I can put my latest projects and a way to let clients reach out to me.",
+            "technicalSheet": "I can say that, this app is the biggest and the nicest work I've ever made. I can't remember any day of the thirty days it took me to launched, I wasn't happy working on it. Server-side implemented using NodeJs to serve a mini API and some images. Front-end is implemented using React and Redux. It seems Redux is overkill for this kind of apps but I choosed because I love the idea of managing the data in one place. The animation between pages is implemented using react-transition-group. For CSS I used SASS. I wrote JEST and Enzyme as usual for testing. Responsiveness was my major concern so I hope I did all right.",
             "images": [
                 "image1.jpg",
                 "image2.jpg",
@@ -20,24 +20,24 @@
                 "React Router",
                 "Redux",
                 "Redux thunk",
-                "Firebase",
+                "React Transition Group",
                 "Jest",
                 "Enzyme",
                 "Webpack",
                 "Babel",
-                "NodeJs"
+                "NodeJs",
+                "ExpressJs"
             ],
             "resources": {
-                "online": "https://shadi-expensify-app.herokuapp.com/",
-                "github": "https://github.com/shadialtarsha/expensify-app"
+                "online": "https://www.shadialtarsha.com/"
             },
             "tags": [
                 "JavaScript",
                 "React",
                 "Redux",
                 "SASS",
-                "Firebase",
-                "Front-end",
+                "Full-Stack",
+                "NodeJs",
                 "Jest",
                 "Enzyme"
             ]
@@ -46,7 +46,7 @@
             "_id": "expensify",
             "title": "Expensify",
             "subtitle": "Front-end web application helps users to manage thier expenses.",
-            "technicalSheet": "I made this app to implement all what I've been learning about ReactJs and Redux. I learned tons of things while I was building this project such as implementing client routing, using SASS, and apply middleware to Readux using Readux thunk. As all of my projects I tested my code using Jest and Enzyme which are very great combination for testing React apps.",
+            "technicalSheet": "I made this app to implement all what I've been learning about ReactJs and Redux. I learned tons of things while I was building this project such as implementing client routing, using SASS, and apply middleware to Redux using Redux thunk. As all of my projects I tested my code using Jest and Enzyme which are very great combination for testing React apps.",
             "images": [
                 "image1.jpg",
                 "image2.jpg",
@@ -86,7 +86,7 @@
         {
             "_id": "indecision",
             "title": "Indecision",
-            "subtitle": "Front-end web application helps users to make a decision via computer.",
+            "subtitle": "Front-end web application helps users to make a decision with the help of computer.",
             "technicalSheet": "The main reason for making this app was to emphasize my knowleadge about testing and structuring projects and implement advanced stuff like React, Redux and client routing.",
             "images": [
                 "image1.jpg",
