@@ -5,15 +5,29 @@ const LoadingPage = () => (
     <div className="centered" id="loading-page">
       <div className="wrapper">
         <div className="loading-container">
-          <span className="loading">
-            <span>L</span>
-            <span>o</span>
-            <span>a</span>
-            <span>d</span>
-            <span>i</span>
-            <span>n</span>
-            <span>g</span>
-          </span>
+          <div className="loading">
+            <div>
+              <span>L</span>
+            </div>
+            <div>
+              <span>o</span>
+            </div>
+            <div>
+              <span>a</span>
+            </div>
+            <div>
+              <span>d</span>
+            </div>
+            <div>
+              <span>i</span>
+            </div>
+            <div>
+              <span>n</span>
+            </div>
+            <div>
+              <span>g</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
