@@ -1,0 +1,41 @@
+@mixin slideSocialMediaOut{
+    .social-media ul li{
+        opacity: 1;
+        transform: translate3d(0, 0,0);
+        animation: social-media-animation-on-exit .7s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    }
+    .social-media ul li:nth-of-type(1){
+        animation-delay: .1s;    
+    }
+    .social-media ul li:nth-of-type(2){
+        animation-delay: .2s; 
+    }
+    .social-media ul li:nth-of-type(3){
+        animation-delay: .3s; 
+    }
+    .social-media ul li:nth-of-type(4){
+        animation-delay: .4s; 
+    }
+    
+    @keyframes social-media-animation-on-exit{
+        0%{
+            opacity: 1;
+            transform: translate3d(0, 0,0);
+        }
+        100%{
+            opacity: 0;
+            transform: translate3d(-30vh, 0,0);
+        }
+    }
+    .social-media > span{
+        animation: follow-me-animation-on-exit .1s linear .1s forwards;
+    }
+    @keyframes follow-me-animation-on-exit{
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+}

@@ -16,13 +16,14 @@
 .burger-icon{
     cursor: pointer;
     position: fixed;
-    top: auto;
+    top: 88vh;
     bottom: 3rem;
     z-index: 100;
     border-radius: 50%;
     padding: 1rem;
     background: darken($bg-color, 10%);
     box-shadow: 0 0 .3rem rgba(0,0,0,.15);
+    height: 57.7344px;
     @include right-floating;
     @media (min-width: $small-device){
         padding: .5rem .4rem;

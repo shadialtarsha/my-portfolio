@@ -2,6 +2,7 @@
     @include menuSlideOut;
     @include slideRightArrowOut;
     @include slideLeftArrowOut;
+    @include slideSocialMediaOut;
     animation: slideOutToLeft .8s both ease-out 1.3s;
 }
 
@@ -15,9 +16,11 @@
 
 @keyframes slideOutToLeft {
     from{
+        
         transform: translate3d(0,0,0);
     }
     to{
+
         transform: translate3d(-200%,0,0);
     }
 }

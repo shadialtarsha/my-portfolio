@@ -19,5 +19,6 @@
 .navRightSlide-exit-active{
     @include arrowsSlideOutWhenMenuActive;
     @include menuSlideOutWhenActive;
+    @include slideSocialMediaOut;
     animation: slideOutToLeft .8s both ease-out 1.3s;
 }
