@@ -19,7 +19,6 @@ const createBackgroundColor = (percent, barColor) => {
 
 class SkillItem extends React.Component {
   componentDidMount() {
-    console.log(this.props.history);
     const percentage = this.props.skill.percentage.split('%')[0];
     this.animateCircle(percentage);
   }
