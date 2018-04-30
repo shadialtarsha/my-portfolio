@@ -16,7 +16,7 @@ const Transitions = ({ transition = {}, duration = 1100, pageKey, children }) =>
       })}
     >
       <CSSTransition appear component={null} key={pageKey} timeout={duration}>
-        <div>{children}</div>
+        {children}
       </CSSTransition>
     </TransitionGroup>
   ) : (
