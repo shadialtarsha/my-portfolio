@@ -3,7 +3,6 @@
     position: fixed;
     width: 100%;
     z-index: 10;
-    overflow: hidden;
 }
 
 #page-header.hidden .menu{
@@ -88,6 +87,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
+    z-index:10;
     top:0;
     left:0;
     transition: transform .45s cubic-bezier(0.45, 0, 0, 1);
