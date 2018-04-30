@@ -32,8 +32,8 @@ const renderApp = () => {
 
 ReactDOM.render(<LoadingPage />, document.querySelector('#app'));
 
-// store
-//   .dispatch(startSetSkills())
-//   .then(() => store.dispatch(startSetProjects()))
-//   .then(() => renderApp())
-//   .catch(e => console.log(e));
+store
+  .dispatch(startSetSkills())
+  .then(() => store.dispatch(startSetProjects()))
+  .then(() => renderApp())
+  .catch(e => console.log(e));
