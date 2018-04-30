@@ -63,8 +63,7 @@
     transform: translateY(-1rem) rotate(225deg);
 }
 
-.burger-icon--white{
-    @extend .burger-icon;
+.white{
     background: transparent;
     border: .1rem solid $white-color;
     border-radius: 50%;

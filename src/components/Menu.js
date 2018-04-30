@@ -117,7 +117,7 @@ class Menu extends React.Component {
           </NavLink>
         </nav>
         <div
-          className={this.props.error ? 'burger-icon--white' : 'burger-icon'}
+          className={this.props.error ? 'burger-icon white' : 'burger-icon'}
           role="button"
           onClick={this.onMenuIconOpen}
         >
