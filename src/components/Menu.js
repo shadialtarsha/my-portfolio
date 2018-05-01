@@ -3,9 +3,11 @@ import { NavLink, withRouter } from 'react-router-dom';
 
 class Menu extends React.Component {
   componentDidMount() {
-    const burgerIcon = document.querySelector('.burger-icon');
-    burgerIcon.style.top = `${window.innerHeight * 87 / 100}px`;
-    console.log(window.innerHeight * 87 / 100);
+    window.addEventListener('resize', () => {
+      const burgerIcon = document.querySelector('.burger-icon');
+      burgerIcon.style.top = `${window.innerHeight * 87 / 100}px`;
+      console.log(window.innerHeight * 87 / 100);
+    });
   }
   onMenuIconOpen = e => {
     e.currentTarget.classList.toggle('open');
