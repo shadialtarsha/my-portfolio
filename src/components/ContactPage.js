@@ -21,7 +21,7 @@ const ContactPage = () => (
             <ContactForm />
             <div className="social-media-container">
               <h2>Let's get social</h2>
-              <p>You can follow me on facebook, github, twitter, or on instagram.</p>
+              <p>You can follow me on facebook, github, or on twitter.</p>
               <div className="buttons-social-media">
                 <button id="facebook-button">
                   <i className="fab fa-facebook-f fa-inverse logo" />

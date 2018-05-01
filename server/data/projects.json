@@ -3,8 +3,8 @@
         {
             "_id": "my-portfolio",
             "title": "My porfolio",
-            "subtitle": "FullStack application where I can put my latest projects and a way to let clients reach out to me.",
-            "technicalSheet": "I can say that, this app is the biggest and the nicest work I've ever made. I can't remember any day of the thirty days it took me to launched, I wasn't happy working on it. Server-side implemented using NodeJs to serve a mini API and some images. Front-end is implemented using React and Redux. It seems Redux is overkill for this kind of apps but I choosed because I love the idea of managing the data in one place. The animation between pages is implemented using react-transition-group. For CSS I used SASS. I wrote JEST and Enzyme as usual for testing. Responsiveness was my major concern so I hope I did all right.",
+            "subtitle": "FullStack web application where I can talk about my latest projects and a way to let clients reach out to me.",
+            "technicalSheet": "I can say that, this app is the biggest and the nicest work I've ever made. I can't remember any day of the thirty days it took me to launched, I wasn't happy working on it. Server-side was implemented using NodeJs to serve a mini API and some images. Front-end was implemented using React and Redux. It seems Redux is overkill for this kind of apps but I choosed because I love the idea of managing the data in one place. The animation between pages is implemented using react-transition-group. For CSS I used SASS. I wrote JEST and Enzyme as usual for testing. Responsiveness was my major concern so I hope I did all right.",
             "images": [
                 "image1.jpg",
                 "image2.jpg",
