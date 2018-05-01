@@ -8,13 +8,14 @@ class Menu extends React.Component {
       const burgerIcon = document.querySelector('.burger-icon');
       const wantedTop = `${window.innerHeight * 88 / 100}px`;
       burgerIcon.style.top = wantedTop;
-      // window.addEventListener('resize', () => {
-      //   if (mobileSize.matches) {
-      //     burgerIcon.style.top = wantedTop;
-      //   } else {
-      //     burgerIcon.style.top = '3.5rem';
-      //   }
-      // });
+      window.addEventListener('resize', () => {
+        if (mobileSize.matches) {
+          const newTop = `${window.innerHeight * 88 / 100}px`;
+          burgerIcon.style.top = newTop;
+        } else {
+          burgerIcon.style.top = '3.5rem';
+        }
+      });
     }
   }
 
