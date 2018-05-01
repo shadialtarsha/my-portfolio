@@ -2,6 +2,11 @@ import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 
 class Menu extends React.Component {
+  componentDidMount() {
+    const burgerIcon = document.querySelector('.burger-icon');
+    const topValue = burgerIcon.getBoundingClientRect();
+    burgerIcon.style.top = `${topValue.top.toFixed}px`;
+  }
   onMenuIconOpen = e => {
     e.currentTarget.classList.toggle('open');
     document.querySelector('#page-header').classList.toggle('hidden');
