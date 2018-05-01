@@ -5,7 +5,11 @@ class Menu extends React.Component {
   componentDidMount() {
     const burgerIcon = document.querySelector('.burger-icon');
     const topValue = burgerIcon.getBoundingClientRect();
-    burgerIcon.style.top = `${topValue.top.toFixed - 20}px`;
+    console.log(Math.round(topValue.top));
+    console.log(Math.round(window.innerHeight * 87 / 100));
+    // if (topValue.top === window.innerHeight * 87 / 100) {
+    //   console.log(true);
+    // }
   }
   onMenuIconOpen = e => {
     e.currentTarget.classList.toggle('open');
@@ -15,6 +19,7 @@ class Menu extends React.Component {
   render() {
     return (
       <header id="page-header" className="hidden">
+        <p>{window.innerHeight}</p>
         <nav className="menu">
           <NavLink
             className="menu__link"
