@@ -2,12 +2,6 @@ import React from 'react';
 import { NavLink, withRouter } from 'react-router-dom';
 
 class Menu extends React.Component {
-  // componentDidMount() {
-  //   window.addEventListener('resize', () => {
-  //     const burgerIcon = document.querySelector('.burger-icon');
-  //     burgerIcon.style.Top = window.innerHeight * 87 / 100;
-  //   });
-  // }
   onMenuIconOpen = e => {
     e.currentTarget.classList.toggle('open');
     document.querySelector('#page-header').classList.toggle('hidden');
@@ -123,7 +117,7 @@ class Menu extends React.Component {
           </NavLink>
         </nav>
         <div
-          className={this.props.error ? 'vh-for-mobile burger-icon white' : 'vh-for-mobile burger-icon'}
+          className={this.props.error ? 'burger-icon white' : 'burger-icon'}
           role="button"
           onClick={this.onMenuIconOpen}
         >

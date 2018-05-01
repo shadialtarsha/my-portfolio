@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import 'normalize.css/normalize.css';
-import 'vh-for-mobile';
 
 import LoadingPage from './components/LoadingPage';
 import AppRouter from './routes/AppRouter';
