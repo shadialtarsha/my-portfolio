@@ -8,7 +8,8 @@ class SocialMedia extends React.Component {
       const wantedTop = `${window.innerHeight * 87 / 100}px`;
       socialIcons.style.top = wantedTop;
       window.addEventListener('resize', () => {
-        socialIcons.style.top = wantedTop;
+        const newTop = `${window.innerHeight * 87 / 100}px`;
+        socialIcons.style.top = newTop;
       });
     }
   }
