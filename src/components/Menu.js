@@ -3,13 +3,15 @@ import { NavLink, withRouter } from 'react-router-dom';
 
 class Menu extends React.Component {
   componentDidMount() {
-    const burgerIcon = document.querySelector('.burger-icon');
-    burgerIcon.style.top = `${window.innerHeight * 87 / 100}px`;
-    console.log(window.innerHeight * 87 / 100);
-    window.addEventListener('resize', () => {
-      burgerIcon.style.top = `${window.innerHeight * 87 / 100}px`;
-      console.log(window.innerHeight * 87 / 100);
-    });
+    const mobileSize = window.matchMedia('(max-width: 36em - .1em)');
+    if (mobileSize.matches) {
+      const burgerIcon = document.querySelector('.burger-icon');
+      const wantedTop = `${window.innerHeight * 88 / 100}px`;
+      burgerIcon.style.top = wantedTop;
+      window.addEventListener('resize', () => {
+        burgerIcon.style.top = wantedTop;
+      });
+    }
   }
 
   onMenuIconOpen = e => {
