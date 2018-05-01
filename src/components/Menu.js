@@ -5,7 +5,7 @@ class Menu extends React.Component {
   componentDidMount() {
     const burgerIcon = document.querySelector('.burger-icon');
     const topValue = burgerIcon.getBoundingClientRect();
-    burgerIcon.style.top = `${topValue.top.toFixed}px`;
+    burgerIcon.style.top = `${topValue.top.toFixed - 20}px`;
   }
   onMenuIconOpen = e => {
     e.currentTarget.classList.toggle('open');
