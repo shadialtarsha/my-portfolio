@@ -38,6 +38,8 @@ class SkillItem extends React.Component {
       }, percentage / 1000);
       setTimeout(() => {
         clearInterval(intervalId);
+        circle.style.backgroundImage = createBackgroundColor(percentage, '#61afef');
+        circle.setAttribute('data-content', `${percentage}%`);
       }, 2000);
     }, duration);
   }
