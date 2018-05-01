@@ -3,13 +3,17 @@ import { NavLink, withRouter } from 'react-router-dom';
 
 class Menu extends React.Component {
   componentDidMount() {
-    const mobileSize = window.matchMedia('(max-width: 36em - .1em)');
+    const mobileSize = window.matchMedia('(max-width: 35.9em)');
     if (mobileSize.matches) {
       const burgerIcon = document.querySelector('.burger-icon');
       const wantedTop = `${window.innerHeight * 88 / 100}px`;
       burgerIcon.style.top = wantedTop;
       window.addEventListener('resize', () => {
-        burgerIcon.style.top = wantedTop;
+        if (mobileSize.matches) {
+          burgerIcon.style.top = wantedTop;
+        } else {
+          burgerIcon.style.top = '3.5rem';
+        }
       });
     }
   }
