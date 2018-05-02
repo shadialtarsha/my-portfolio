@@ -58,14 +58,17 @@ export const ProjectPage = ({ projects, project }) => {
                 <h2>Resources</h2>
                 <hr />
                 <ul>
-                  <li>
-                    <p>
-                      online:{' '}
-                      <a href={project.resources.online} target="_blank">
-                        {project.resources.online}
-                      </a>
-                    </p>
-                  </li>
+                  {project.resources.online && (
+                    <li>
+                      <p>
+                        online:{' '}
+                        <a href={project.resources.online} target="_blank">
+                          {project.resources.online}
+                        </a>
+                      </p>
+                    </li>
+                  )}
+
                   {project.resources.github && (
                     <li>
                       <p>
