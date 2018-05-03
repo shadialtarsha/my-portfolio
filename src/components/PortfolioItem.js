@@ -8,7 +8,7 @@ const PortfolioItem = ({ project }) => (
       <div
         className="project-thumbnail"
         style={{
-          backgroundImage: `url(https://shadi-my-portfolio.herokuapp.com/images/${project._id}/${project.images[0]})`,
+          backgroundImage: `url(https://shadialtarsha.com/images/${project._id}/${project.images[0]})`,
         }}
       >
         <div className="curtain">
