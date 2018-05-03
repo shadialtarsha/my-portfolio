@@ -3,12 +3,24 @@ import { NavLink } from 'react-router-dom';
 
 const PortfolioItem = ({ project }) => (
   <li className="project-item">
-    <NavLink className="project-item__container" to={`/portfolio/${project._id}`}>
+    <NavLink
+      className="project-item__container"
+      to={{
+        pathname: `/portfolio/${project._id}`,
+        state: {
+          transition: {
+            enterActive: 'rightSlide-enter-active',
+            exitActive: 'rightSlide-exit-active',
+          },
+          duration: 2800,
+        },
+      }}
+    >
       <p className="project-title">{project.title}</p>
       <div
         className="project-thumbnail"
         style={{
-          backgroundImage: `url(https://shadialtarsha.com/images/${project._id}/${project.images[0]})`,
+          backgroundImage: `url(http://localhost:3333/images/${project._id}/${project.images[0]})`,
         }}
       >
         <div className="curtain">

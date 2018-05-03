@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import PortfolioIcon from './PortfolioIcon';
 import Menu from './Menu';
 import ImageSlider from './ImageSlider';
 import Footer from './Footer';
@@ -28,6 +28,7 @@ export const ProjectPage = ({ projects, project }) => {
   const previousIndex = findPreviousIndex(projects, project);
   return (
     <div>
+      <PortfolioIcon />
       <Menu />
       <div className="page">
         <div className="centered" id="project">

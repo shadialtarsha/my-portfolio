@@ -23,18 +23,28 @@ const ContactPage = () => (
               <h2>Let's get social</h2>
               <p>You can follow me on facebook, github, or on twitter.</p>
               <div className="buttons-social-media">
-                <button id="facebook-button">
+                <a
+                  id="facebook-button"
+                  href="https://www.facebook.com/shadi.altarsha"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <i className="fab fa-facebook-f fa-inverse logo" />
                   <span>Facebook</span>
-                </button>
-                <button id="github-button">
+                </a>
+                <a id="github-button" href="https://github.com/shadialtarsha" rel="noopener noreferrer" target="_blank">
                   <i className="fab fa-github fa-inverse logo" />
                   <span>Github</span>
-                </button>
-                <button id="twitter-button">
+                </a>
+                <a
+                  id="twitter-button"
+                  href="https://twitter.com/shadi_altarsha"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <i className="fab fa-twitter fa-inverse logo" />
                   <span>Twitter</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>

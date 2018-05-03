@@ -1,4 +1,6 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 const path = require('path');
 const skills = require('./data/skills.json');
 const projects = require('./data/projects.json');
@@ -6,10 +8,44 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 3333;
+
 const publicPath = path.join(__dirname, '..', 'public');
 app.use(express.static(publicPath));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/sendmail', (req, res) => {
+  const html = `
+    <h2>${req.body.name}</h2>
+    <p>${req.body.message}</p>
+  `;
+
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.zoho.com',
+    port: 465,
+    secure: true,
+    auth: {
+      user: 'work@shadialtarsha.com',
+      pass: 'shadialtarsha0999164940',
+    },
+  });
+
+  const mailOptions = {
+    from: req.body.email,
+    to: 'work@shadialtarsha.com',
+    subject: 'From my portfolio',
+    html,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      return console.log(error);
+    }
+    console.log(`Message sent: ${info.response}`);
+  });
+});
 
 app.get('/api/skills', (req, res) => {
   res.header('Content-Type', 'application/json');

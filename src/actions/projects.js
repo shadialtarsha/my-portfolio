@@ -6,7 +6,7 @@ export const setProjects = (projects = []) => ({
 });
 
 export const startSetProjects = () => dispatch => {
-  const url = 'https://shadialtarsha.com/api/projects';
+  const url = 'http://localhost:3333/api/projects';
   return fetch(url)
     .then(response => response.json())
     .then(data => dispatch(setProjects(data.projects)))

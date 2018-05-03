@@ -1,0 +1,31 @@
+.portfolio-icon{
+    cursor: pointer;
+    position: fixed;
+    display: block;
+    top: 3.5rem;
+    height: 1.5rem;
+    z-index: 25;
+    @include right-floating;
+    @media (min-width: $small-device){
+        padding: .5rem .4rem;
+        top: 3.5rem;
+        bottom: auto;
+        @include left-floating;
+    }
+    tr{
+        display: block;
+        width: 3.2rem;
+        height: 33.33%;
+        margin: .8rem;
+        @media (min-width: $small-device){
+            width: 4.2rem;
+        }
+    }
+    td{
+        display: inline-block;
+        background-color: $primary-color;
+        width: calc(33.33% - .2rem);
+        height: 100%;
+        margin-right: .2rem;
+    }
+}

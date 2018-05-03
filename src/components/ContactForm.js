@@ -48,6 +48,11 @@ export class ContactForm extends Component {
 
   onSubmit = e => {
     e.preventDefault();
+    const payload = {
+      name: this.state.name.trim(),
+      email: this.state.email.trim(),
+      message: this.state.message.trim(),
+    };
     this.nameLabelRef.current.style.removeProperty('color');
     this.emailLabelRef.current.style.removeProperty('color');
     this.messageLabelRef.current.style.removeProperty('color');
@@ -56,6 +61,14 @@ export class ContactForm extends Component {
       email: '',
       message: '',
     }));
+
+    fetch('http://localhost:3333/sendmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
   };
 
   validateName = name => name.length > 1;
