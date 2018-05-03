@@ -16,6 +16,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.post('/test', (req, res) => {
+  console.log('hi');
+});
+
 app.post('/sendmail', (req, res) => {
   const html = `
     <h2>${req.body.name}</h2>
