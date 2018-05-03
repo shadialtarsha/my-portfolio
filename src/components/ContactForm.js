@@ -62,7 +62,7 @@ export class ContactForm extends Component {
       message: '',
     }));
 
-    fetch('http://localhost:3333/sendmail', {
+    fetch('http://shadialtarsha.com/sendmail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

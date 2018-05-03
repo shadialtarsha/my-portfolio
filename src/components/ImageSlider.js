@@ -66,7 +66,7 @@ class ImageSlider extends React.Component {
               key={imageUrl}
               className="slide"
               style={{
-                backgroundImage: `url(http://localhost:3333/images/${this.props.id}/${imageUrl})`,
+                backgroundImage: `url(http://shadialtarsha.com/images/${this.props.id}/${imageUrl})`,
               }}
             />
           ))}

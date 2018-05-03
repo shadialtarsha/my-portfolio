@@ -20,7 +20,7 @@ const PortfolioItem = ({ project }) => (
       <div
         className="project-thumbnail"
         style={{
-          backgroundImage: `url(http://localhost:3333/images/${project._id}/${project.images[0]})`,
+          backgroundImage: `url(http://shadialtarsha.com/images/${project._id}/${project.images[0]})`,
         }}
       >
         <div className="curtain">
