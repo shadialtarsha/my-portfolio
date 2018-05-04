@@ -87,11 +87,11 @@ class Menu extends React.Component {
               state: {
                 transition: {
                   enterActive:
-                    this.props.location.pathname === '/contact'
+                    this.props.location.pathname === '/contact' || this.props.location.pathname.split('/').length === 3
                       ? 'navLeftSlide-enter-active'
                       : 'navRightSlide-enter-active',
                   exitActive:
-                    this.props.location.pathname === '/contact'
+                    this.props.location.pathname === '/contact' || this.props.location.pathname.split('/').length === 3
                       ? 'navLeftSlide-exit-active'
                       : 'navRightSlide-exit-active',
                 },

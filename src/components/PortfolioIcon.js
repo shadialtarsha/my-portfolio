@@ -5,26 +5,37 @@ class PortfolioIcon extends React.Component {
   componentDidMount() {}
   render() {
     return (
-      <NavLink className="portfolio-icon" to="/portfolio">
-        <table cellSpacing="10">
-          <tbody>
-            <tr>
-              <td />
-              <td />
-              <td />
-            </tr>
-            <tr>
-              <td />
-              <td />
-              <td />
-            </tr>
-            <tr>
-              <td />
-              <td />
-              <td />
-            </tr>
-          </tbody>
-        </table>
+      <NavLink
+        className="portfolio-icon"
+        to={{
+          pathname: '/portfolio',
+          state: {
+            transition: {
+              enterActive: 'portfolioIcon-enter-active',
+              exitActive: 'portfolioIcon-exit-active',
+            },
+            duration: 2800,
+          },
+        }}
+        title="portfolio"
+      >
+        <div className="grid">
+          <div className="row">
+            <div className="ceil" />
+            <div className="ceil" />
+            <div className="ceil" />
+          </div>
+          <div className="row">
+            <div className="ceil" />
+            <div className="ceil" />
+            <div className="ceil" />
+          </div>
+          <div className="row">
+            <div className="ceil" />
+            <div className="ceil" />
+            <div className="ceil" />
+          </div>
+        </div>
       </NavLink>
     );
   }

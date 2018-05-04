@@ -7,6 +7,7 @@
 .navLeftSlide-exit-active{
     @include arrowsSlideOutWhenMenuActive;
     @include menuSlideOutWhenActive;
+    @include portfolioIconSlideOut;
     animation: slideOutToRight .8s both ease-out 1.3s;
 }
 
@@ -20,5 +21,6 @@
     @include arrowsSlideOutWhenMenuActive;
     @include menuSlideOutWhenActive;
     @include slideSocialMediaOut;
+    @include portfolioIconSlideOut;
     animation: slideOutToLeft .8s both ease-out 1.3s;
 }

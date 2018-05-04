@@ -1,4 +1,5 @@
 .pageLoad-appear-active{
     @include menuSlideIn(.7);
     @include arrowsSlideIn(1.2);
+    @include portfolioIconSlideIn(1.2);
 }
