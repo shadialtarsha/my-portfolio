@@ -43,7 +43,7 @@ const AboutPage = () => (
                 </NavLink>.
               </p>
               <p>
-                If you want to make something exsiting together, feel free to email me at{' '}
+                If you have an exciting idea and you want to achieve it together, feel free to email me at{' '}
                 <span className="special-word">work@shadialtarsha.com</span> or fill a form in the{' '}
                 <NavLink
                   className="special-link"
