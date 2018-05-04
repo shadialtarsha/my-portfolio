@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/sendmail', (req, res) => {
   const html = `
     <h2>${req.body.name}</h2>
+    <h3>${req.body.email}</h3>
     <p>${req.body.message}</p>
   `;
 
@@ -27,13 +28,13 @@ app.post('/sendmail', (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: 'work@shadialtarsha.com',
-      pass: 'shadialtarsha0999164940',
+      user: 'portfolio@shadialtarsha.com',
+      pass: ';A#%]`PSuS2~UxRt',
     },
   });
 
   const mailOptions = {
-    from: req.body.email,
+    from: 'portfolio@shadialtarsha.com',
     to: 'work@shadialtarsha.com',
     subject: 'From my portfolio',
     html,
