@@ -71,8 +71,8 @@ export class ContactForm extends Component {
     });
   };
 
-  validateName = name => name.length > 1;
-  validateMessage = message => message.length > 1;
+  validateName = name => name.trim().length > 1;
+  validateMessage = message => message.trim().length > 1;
   validateEmail = email => {
     const regx = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regx.test(email);
