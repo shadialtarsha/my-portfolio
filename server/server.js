@@ -35,7 +35,7 @@ app.post('/sendmail', (req, res) => {
 
   const mailOptions = {
     from: 'portfolio@shadialtarsha.com',
-    to: 'work@shadialtarsha.com',
+    to: 'work@shadialtarsha.com, shadi.altarsha.94@gmail.com',
     subject: 'From my portfolio',
     html,
   };
