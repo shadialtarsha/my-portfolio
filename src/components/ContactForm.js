@@ -24,7 +24,7 @@ export class ContactForm extends Component {
     const { target: { value } } = e;
     this.setState(() => ({ email: value }));
     const emailLabel = this.emailLabelRef.current;
-    if (emailLabel && document.activeElement === this.emailInputlRef.current) {
+    if (emailLabel && document.activeElement === this.emailInputRef.current) {
       if (this.validateEmail(value)) {
         emailLabel.style.color = '#009688';
       } else {
@@ -48,6 +48,8 @@ export class ContactForm extends Component {
 
   onSubmit = e => {
     e.preventDefault();
+    const isSpam = !!this.emailSpamInputRef.current.value;
+    console.log(isSpam);
     const payload = {
       name: this.state.name.trim(),
       email: this.state.email.trim(),
@@ -61,14 +63,15 @@ export class ContactForm extends Component {
       email: '',
       message: '',
     }));
-
-    fetch('https://shadialtarsha.com/sendmail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(payload),
-    });
+    if (!isSpam) {
+      fetch('https://shadialtarsha.com/sendmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+    }
   };
 
   validateName = name => name.trim().length > 1;
@@ -84,7 +87,8 @@ export class ContactForm extends Component {
     this.validateMessage(this.state.message);
 
   nameInputRef = React.createRef();
-  emailInputlRef = React.createRef();
+  emailInputRef = React.createRef();
+  emailSpamInputRef = React.createRef();
   messageTextareaRef = React.createRef();
   nameLabelRef = React.createRef();
   emailLabelRef = React.createRef();
@@ -114,10 +118,22 @@ export class ContactForm extends Component {
             value={this.state.email}
             placeholder="Enter email"
             name="email"
-            ref={this.emailInputlRef}
+            ref={this.emailInputRef}
             onChange={this.onEmailChange}
           />
           <label htmlFor="email" ref={this.emailLabelRef}>
+            <i className="fas fa-at" />
+          </label>
+        </div>
+        <div id="spam_input">
+          <input
+            id="email_spam"
+            type="email"
+            placeholder="Enter email"
+            name="email_spam"
+            ref={this.emailSpamInputRef}
+          />
+          <label htmlFor="email_spam">
             <i className="fas fa-at" />
           </label>
         </div>
